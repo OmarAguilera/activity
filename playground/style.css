@@ -1,0 +1,6 @@
+.custom-div {
+    background-color: blue;
+    clip-path:stroke-box;
+    border: black 2px solid;
+}
+

@@ -1,0 +1,444 @@
+@import './partials/colors';
+
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+//clase logo
+
+.logo-nav{
+ 
+    margin-left: 5rem
+}
+
+/*Clase div contenedor de botones*/
+.button-container{
+    padding: 8px 0 8px 0;
+    display: inline-block;
+    justify-content: end;
+}
+
+.sign-in{
+    padding: 1rem;
+    background-color: #0088ff00;
+    color: $header-secundary-text;
+
+}
+
+.button-BuyNow{
+    margin: 0 7rem 0 0;
+    padding: 15px 40px;
+    border-radius: 10px;
+    color: $btn-text-color;
+}
+
+
+/*#18144c color azul de bloque infinite Solutions */
+
+/*Componente Hero*/
+
+.hero{
+    display: flex;
+    flex: 1 1;
+    background-color: $header-color;
+    clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
+    padding-bottom: 20rem ;
+}
+
+.hero-text-block{
+    padding: 15rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: $header-primary-text;
+}
+
+.hero-description {
+    color: $header-secundary-text;
+}
+
+
+.main-title{
+    font:{
+        weight: bolder;
+        size: 50px;
+    };
+}
+ 
+.main-title-continue {
+    display: block; /* Hacer que "done rigth" sea un bloque */
+    margin-top: 10px; /* Espacio entre las líneas */
+}
+
+/*parte del texto debajo del titulo */
+.hero-description{
+    margin: 50px 0;
+    font-size: 1.5rem;
+}
+
+.description-continue{
+    display: block; 
+    margin-top: 10px; 
+}
+.getStarted-btn{
+    margin-bottom: 50px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    color: $btn-text-color;
+}
+
+
+
+/*Bloque search trusted by*/
+
+.search{
+    display: flex;
+    justify-content: space-between
+}
+
+.img-trusted{
+    height: 30px;
+    margin: 0 1rem;
+}
+
+
+
+/* Highlights section */
+
+.product-highlights {
+    background-color: $main-color;
+    margin-top: 100px;
+}
+
+.highlights-img {
+    width: 300px;
+    border-radius: 40px;
+}
+
+.highlights-titles {
+    color: $titles-color;
+}
+
+.highlights-paragraphs {
+    color: $paragraphs-color;
+}
+
+.card-website-ui-kit {
+    background-color: #02001d;
+    height: 250px;
+    width: 200px;
+}
+
+.app-icon {
+    width: 150px;
+}
+
+.oval {
+    text-align: center;
+    border-radius: 50px;
+    height: 30px;
+    width: 120px;
+    color: white;
+}
+
+.tools {
+    background-color: orange;
+}
+
+.features {
+    background-color: green;
+}
+
+.technology{
+    background-color: blue;
+}
+
+.technology-cards {
+    border: #02001d solid 1px;
+    width: 600px;
+    height: 500px;
+}
+
+
+
+/* Jimmy Hendrix Card */
+
+.hendrix-card {
+    border: solid black 2px;
+    width: 255px;
+    height: 320px;
+    border-radius: 20px;
+}
+
+.technology-img {
+    height: 250px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.JH-circle {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(88, 88, 46);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like-icon {
+    color: #02001d;
+}
+
+
+/* Components card */
+
+.components-card {
+    border: solid 1px wheat;
+    display: flex;
+    
+}
+
+.check-circle {
+    border-radius: 50px;
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-check {
+    color: white;
+}
+
+.text-card-components {
+
+}
+
+
+
+/*Airbnb Card*/
+
+.card-airbnb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2cfde;
+    height: 250px;
+    width: 280px;
+}
+
+.rbnb-card-logo {
+    width: 100px;
+}
+
+.stars{
+    color: gold;
+}
+
+.last {
+    color: rgb(75, 54, 54);
+}
+
+/* UI Kit Card */
+
+.card-website-ui-kit {
+    background-color: #86848b;
+    height: 300px;
+    width: 280px;
+
+}
+
+.UIKit-logo {
+    border-radius: 50px;
+    height: 70px;
+}
+
+.people-UIKit-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.people-UIKit {
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+
+.easy-to-install {
+    background-color: orange;
+}
+
+/*Seccion de manage cards con el boton Add new*/
+
+
+.manageCards-container{
+    padding: 2rem 1rem;
+    margin: 8rem  10rem;
+    background-color: white;
+    border-radius: 10px 10px 100px 10px; 
+    margin-bottom: 5rem;
+}
+
+.conteiner-ManageCards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-manageCards{
+    display: inline-block;
+    white-space: nowrap;
+    font-size: large;
+    margin: 1rem 2rem;
+}
+
+.button-AddNew{
+    background-color: white;
+    margin: 0 2rem;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: $btn-text-color;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+}
+
+
+//Imagen card 
+
+.img-card{
+    color: white;
+    margin: 20px 20px;
+    background-color: #1c1245;
+    border-radius: 10px;
+}
+
+.container-card{
+    margin: 10px 20px;
+}
+
+
+.iconMaster-textActive{
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.svgMastercard{
+    width: 4rem;
+}
+
+.cardStatus-text{
+    color: white;
+    background-color: #5ec9a7;
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+}
+
+//Numero de tarjeta 
+.container-cardNumber{
+    padding: 0 1rem;
+    
+}
+
+.p-cardNumber{
+    text-align: left;
+    font-size: small;
+    font-weight: lighter;
+}
+
+.card-number{
+    font-weight: 500;
+    font-size: xx-large;
+    text-align: right;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+//nombre de usuario de tarjeta y expiracion
+
+
+.name-expiryDate{
+    display: flex;
+    flex: 1 1;
+    justify-content: space-between;
+}
+
+.conteiner-nameCard{
+    text-align: left;
+    margin: 10px 0 35px 15px;
+}
+
+.usuarioName{
+    text-align: left;
+    font-size: small;
+    font-weight: 100;
+
+}
+.namePerson{
+    font-size: 1.3rem;
+}
+
+.conteiner-expiryDate{
+    text-align: left;
+    margin: 10px 150px 35px 15px;
+}
+
+.p-expiryDate{
+    text-align: left;
+    font-size: small;
+    font-weight: 100;
+}
+.dateExpiry{
+    font-size: 1.3rem;
+}
+
+/* Infinite solutions */
+
+.infiniteSolutions {
+    display: flex;
+    background-color: $secundary-color;
+    height: 300px;
+    border-radius: 0px 80px 0px 80px;
+    width: 1200px;
+    color: $main-color;
+    align-items: center;
+}
+
+.info {
+    margin-left: 100px;
+}
+
+
+.learn-more-button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 200px;
+
+}
+
+.learn-more-arrow {
+    color: #18144c;
+}
+
+/* Footer */
+
+.footer {
+    background-color: $secundary-color;
+    color: $main-color;
+    height: 650px;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); 
+    bottom: ;
+}
+
+.logo-footer {
+    height: 100px;
+}
