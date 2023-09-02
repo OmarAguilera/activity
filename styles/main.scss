@@ -225,7 +225,7 @@
 
 /*Airbnb Card*/
 
-.card-airbnb {
+.airbnb-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -429,16 +429,109 @@
     color: #18144c;
 }
 
+
+
+/* Awards */
+
+.awards {
+    background-color: #d2cfde;
+    width: 100%;
+    height: 1020px;
+    clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
+}
+
+
+.award-card {
+    background-color: #1c1245;
+    border-radius: 10px;
+    height: 320px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 150px;
+    }
+}
+
+
+/* Helpful Answers */
+
+helpful-answers {
+    height: 700px;
+  }
+  
+  /* Estilos iniciales para las respuestas */
+  
+  .question-answer {
+    margin-bottom: 50px;
+    width: 100%;
+   
+  }
+  
+  .question {
+    background-color: #02001d;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0 20px; /* Agrega espaciado interior para las respuestas */
+    background-color: #02001d;
+  }
+  
+  /* Estilo opcional para el ícono de pregunta activa */
+  .question.active {
+    /* Agrega estilos para el ícono activo aquí */
+    background-color: #068afe;
+    color: #1c1c16;
+  }
+
 /* Footer */
 
 .footer {
     background-color: $secundary-color;
     color: $main-color;
     height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); 
-    bottom: ;
+    padding: 0 350px;
+}
+
+.footer-top{
+    
+}
+
+.footer-bottom {
+    
+}
+
+
+.footer-center {
+    
 }
 
 .logo-footer {
-    height: 100px;
+    height: 30px;
+}
+
+
+.divider {
+    border: none;
+    height: 1px; 
+    background: linear-gradient(to right, transparent, #613737, transparent); 
+    width: 90%;
 }

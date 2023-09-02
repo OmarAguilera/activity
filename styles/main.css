@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.logo-nav {
+  margin-left: 5rem;
+}
+
 /*Clase div contenedor de botones*/
 .button-container {
   padding: 8px 0 8px 0;
@@ -194,7 +198,7 @@
 }
 
 /*Airbnb Card*/
-.card-airbnb {
+.airbnb-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -382,19 +386,88 @@
   color: #18144c;
 }
 
+/* Awards */
+.awards {
+  background-color: #d2cfde;
+  width: 100%;
+  height: 1020px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
+          clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
+}
+
+.award-card {
+  background-color: #1c1245;
+  border-radius: 10px;
+  height: 320px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.award-card img {
+  width: 150px;
+}
+
+/* Helpful Answers */
+helpful-answers {
+  height: 700px;
+}
+
+/* Estilos iniciales para las respuestas */
+.question-answer {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.question {
+  background-color: #02001d;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  padding: 0 20px; /* Agrega espaciado interior para las respuestas */
+  background-color: #02001d;
+}
+
+/* Estilo opcional para el ícono de pregunta activa */
+.question.active {
+  /* Agrega estilos para el ícono activo aquí */
+  background-color: #068afe;
+  color: #1c1c16;
+}
+
 /* Footer */
 .footer {
   background-color: #151348;
   color: #ffffff;
   height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  padding: 0 350px;
 }
 
 .logo-footer {
-  height: 50px;
+  height: 30px;
 }
 
-.footer-content {
-  margin: 100px;
+.divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #613737, transparent);
+  width: 90%;
 }/*# sourceMappingURL=main.css.map */

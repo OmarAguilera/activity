@@ -4,18 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .custom-div {
-            width: 1440px;
-            height: 850px;
-            background-color: #e0e0e0;
-            clip-path: polygon(100% 0,100% 0%,100% 100%,100% 100%);
+        .table-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            width: 700px;
+            background-color: aqua;
         }
+        
+        .progress-table{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: solid 1px rgb(41, 41, 38);
+            border-radius: 20px;
+            width: 500px;
+            height: 380px;
+            box-shadow: 1px 1px 5px 1px grey;
+            progress{
+                width: 410px;
+            }
+        }
+
+        .progress{
+            background: rgb(155, 157, 153);
+            border: none;
+            height: 20px;
+            border-radius: 10px;
+            height: 5px;
+            appearance: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+                /* Estilos para la barra de progreso en navegadores webkit (Chrome) */
+        .progress::-webkit-progress-value {
+            background-color: #5b6a64; /* Cambia el color de la barra en Chrome (ejemplo: naranja) */
+        }
+
+        /* Estilos para la barra de progreso en navegadores Mozilla (Firefox) */
+        .progress::-moz-progress-bar {
+            background-color: #cbbb5f; /* Cambia el color de la barra en Firefox (ejemplo: naranja) */
+        }
+
+
     </style>
     <title>Custom Div</title>
 </head>
 <body>
-    <div class="custom-div">
-        <!-- Contenido del div aquí -->
+
+    <div class="table-container">
+        <div class="progress-table">
+            <h2>
+                Awesome projects
+            </h2>
+            <div>
+                <p>
+                    Create de new logo
+                </p>
+                <progress class="progress" value="50" max="100"></progress>
+            </div>
+            <div>
+                <p>
+                    Set up de color palette
+                </p>
+                <progress class="progress" value="70" max="100"></progress>
+            </div>
+            <div>
+                <p>
+                    Wireframe and prototype
+                </p>
+                <progress class="progress" value="90" max="100"></progress>
+            </div>
+        </div>
     </div>
+
+
+
 </body>
 </html>
