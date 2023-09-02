@@ -154,14 +154,14 @@
             justify-content: center;
         }
 
-                /* Estilos para la barra de progreso en navegadores webkit (Chrome) */
+                /* Progress bar style webkit (Chrome) */
         .progress::-webkit-progress-value {
-            background-color: #5b6a64; /* Cambia el color de la barra en Chrome (ejemplo: naranja) */
+            background-color: #5b6a64; 
         }
 
-        /* Estilos para la barra de progreso en navegadores Mozilla (Firefox) */
+        /* Progress bar style Mozilla (Firefox) */
         .progress::-moz-progress-bar {
-            background-color: #cbbb5f; /* Cambia el color de la barra en Firefox (ejemplo: naranja) */
+            background-color: #cbbb5f; 
         }
 
         .team-img{
@@ -181,7 +181,7 @@
 
 
 .tools-info{
-    margin-top: 150px;
+    margin-top: 200px;
     margin-right: 300px;
 }
 
@@ -191,15 +191,18 @@
 
 .features-info {
     width: 600px;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-right: 30px;
     margin-left: 400px;
+    .features-title{
+        font-size: 20px;
+        color: #18144c;
+    }
 }
 
 
-
 .technology-info {
-    margin-top: 50px;
+    margin-top: 200px;
     margin-right: 30px;
     width: 500px;
 }
@@ -210,6 +213,7 @@
 }
 
 .easy-to-install-info {
+    margin-top: 100px;
    width: 600px;
    height: 400px;
    margin-left: 300px;
@@ -572,7 +576,7 @@ helpful-answers {
     height: 700px;
   }
   
-  /* Estilos iniciales para las respuestas */
+  /* Aditional style for the answers */
   
   .question-answer {
     margin-bottom: 50px;
@@ -597,13 +601,13 @@ helpful-answers {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-    padding: 0 20px; /* Agrega espaciado interior para las respuestas */
+    padding: 0 20px; /* Aditional space for the anwers*/
     background-color: #02001d;
   }
   
-  /* Estilo opcional para el ícono de pregunta activa */
+  /* Style for the active answer*/
   .question.active {
-    /* Agrega estilos para el ícono activo aquí */
+    /* Active icon styles*/
     background-color: #068afe;
     color: #1c1c16;
   }
