@@ -6,6 +6,7 @@
 }
 
 .logo-nav {
+  height: 30px;
   margin-left: 5rem;
 }
 
@@ -92,13 +93,119 @@
 }
 
 /* Highlights section */
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 720px;
+  width: 700px;
+  margin-left: 20%;
+}
+
+.progress-table {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px rgb(41, 41, 38);
+  border-radius: 20px;
+  width: 500px;
+  height: 380px;
+  box-shadow: 1px 1px 5px 1px grey;
+}
+.progress-table .progress {
+  width: 410px;
+  background: rgb(155, 157, 153);
+  border: none;
+  height: 20px;
+  border-radius: 10px;
+  height: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress {
+  background: rgb(155, 157, 153);
+  border: none;
+  height: 20px;
+  border-radius: 10px;
+  height: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para la barra de progreso en navegadores webkit (Chrome) */
+.progress::-webkit-progress-value {
+  background-color: #5b6a64; /* Cambia el color de la barra en Chrome (ejemplo: naranja) */
+}
+
+/* Estilos para la barra de progreso en navegadores Mozilla (Firefox) */
+.progress::-moz-progress-bar {
+  background-color: #cbbb5f; /* Cambia el color de la barra en Firefox (ejemplo: naranja) */
+}
+
+.team-img {
+  margin-bottom: 300px;
+  margin-left: 300px;
+  position: absolute;
+  z-index: 1;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.play {
+  position: absolute;
+  z-index: 1;
+  margin-left: 550px;
+  margin-bottom: 540px;
+}
+
+.tools-info {
+  margin-top: 150px;
+  margin-right: 300px;
+}
+
+.features-info {
+  width: 600px;
+  margin-top: 50px;
+  margin-right: 30px;
+  margin-left: 400px;
+}
+
+.technology-info {
+  margin-top: 50px;
+  margin-right: 30px;
+  width: 500px;
+}
+
+.features-img {
+  height: 460px;
+  border-radius: 10px;
+}
+
+.easy-to-install-info {
+  width: 600px;
+  height: 400px;
+  margin-left: 300px;
+}
+
 .product-highlights {
   background-color: #ffffff;
   margin-top: 100px;
 }
 
 .highlights-img {
-  width: 300px;
+  width: 600px;
   border-radius: 40px;
 }
 
@@ -144,6 +251,7 @@
   border: #02001d solid 1px;
   width: 600px;
   height: 500px;
+  margin-left: 300px;
 }
 
 /* Jimmy Hendrix Card */

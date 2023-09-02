@@ -8,12 +8,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 700px;
+            height: 720px;
             width: 700px;
             background-color: aqua;
         }
         
         .progress-table{
+            position: absolute;
+            z-index: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -22,22 +24,23 @@
             width: 500px;
             height: 380px;
             box-shadow: 1px 1px 5px 1px grey;
-            progress{
+
+            .progress{
                 width: 410px;
+                background: rgb(155, 157, 153);
+                border: none;
+                height: 20px;
+                border-radius: 10px;
+                height: 5px;
+                appearance: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
+        
 
-        .progress{
-            background: rgb(155, 157, 153);
-            border: none;
-            height: 20px;
-            border-radius: 10px;
-            height: 5px;
-            appearance: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+        
 
                 /* Estilos para la barra de progreso en navegadores webkit (Chrome) */
         .progress::-webkit-progress-value {
@@ -49,12 +52,24 @@
             background-color: #cbbb5f; /* Cambia el color de la barra en Firefox (ejemplo: naranja) */
         }
 
-
+        img{
+            margin-bottom: 300px;
+            margin-left: 300px;
+            position: absolute;
+            z-index: 1;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .play{
+            position: absolute;
+            z-index: 1;
+            margin-left: 550px;
+            margin-bottom: 540px;
+        }
     </style>
     <title>Custom Div</title>
 </head>
 <body>
-
     <div class="table-container">
         <div class="progress-table">
             <h2>
@@ -63,6 +78,7 @@
             <div>
                 <p>
                     Create de new logo
+                    
                 </p>
                 <progress class="progress" value="50" max="100"></progress>
             </div>
@@ -79,9 +95,12 @@
                 <progress class="progress" value="90" max="100"></progress>
             </div>
         </div>
+        <img src="../resources/images/img_01.jpg" alt="">
+
+        <button type="button" class="play btn btn-light">Play video</button>
     </div>
 
 
-
+    
 </body>
 </html>
