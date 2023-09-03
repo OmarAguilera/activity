@@ -13,7 +13,7 @@
 
 <body class="">
     <header>
-        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark navbar-custom">
             <a class="navbar-brand" href="#"><img class="logo-nav" src="./resources/images/odoo-nav.png" alt="odoo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,8 +39,7 @@
             </div>
         </nav>
 
-
-        <div class="hero">
+        <div class="hero"> 
 
             <!--Parte del Header bloque con titulo azul-->
             <div class="hero-text-block">
@@ -67,7 +66,7 @@
             </div>
             <!--Manage Cards-->
             <div class="manageCards-container">
-                <div class="conteiner-ManageCards">
+                <div class="container-ManageCards">
                     <!--Solo es la parte de arriba de la tarjeta, acordarse borrar este comentario-->
                     <p class="p-manageCards">
                         Manage cards
@@ -95,7 +94,7 @@
                             </p>
                         </div>
                         <div class="name-expiryDate">
-                            <div class="conteiner-nameCard">
+                            <div class="container-nameCard">
                                 <p class="usuarioName">
                                     NAME
                                 </p>
@@ -103,7 +102,7 @@
                                     John Snow
                                 </p>
                             </div>
-                            <div class="conteiner-expiryDate">
+                            <div class="container-expiryDate">
                                 <p class="p-expiryDate">
                                     EXPIRY DATE
                                 </p>
@@ -116,8 +115,38 @@
                 </div>
                 <!--aca termina la tarjeta de credito-->
 
-                <div class="">
-
+                <div class="container-cost">
+                    <div class="cost-Starbucks">
+                        <p class="cost-name">
+                            Starbucks
+                        </p>
+                        <p class="price-cost">
+                            $5,50 USD
+                        </p>
+                    </div>
+                    <div class="container-location">
+                        <p class="status-locate">
+                            Pending - San Francisco, United States
+                        </p>
+                    </div>
+                </div>
+                <div class="container-cost">
+                    <div class="cost-Starbucks">
+                        <p class="cost-name">
+                            Nike Sports
+                        </p>
+                        <p class="price-cost">
+                            $129,00 USD
+                        </p>
+                    </div>
+                    <div class="container-location">
+                        <p class="status-locate">
+                            Pending - Lisbon, Portugal
+                        </p>
+                    </div>
+                </div>
+                <div class="container-viewAll">
+                    <a class="viewAll-anchor"href="#">View all ></a>
                 </div>
             </div>
         </div>
@@ -238,7 +267,7 @@ View all-->
 
         <!-- THIRD -->
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-bg-6">
 
                 <div class="technology-cards">
                     <!-- Tenía la clase container -->
@@ -247,17 +276,19 @@ View all-->
                             <!-- Hendrix card -->
                             <div class="hendrix-card">
                                 <img class="technology-img" src="./resources/images/person_03.jpg" alt="example">
+                                
                                 <div class="profile-info">
                                     <div class="JH-circle">
                                         JH
                                     </div>
-                                    <p>
+                                    <p class="name-card-JH">
                                         Jimmy Hendrix
                                     </p>
                                     <i class="fa-regular fa-heart"></i>
                                 </div>
                             </div>
                             <!-- Components card -->
+
                             <div class="components-card">
                                 <div class="check-circle">
                                     <i class="fa-solid fa-check"></i>
@@ -281,7 +312,7 @@ View all-->
 
                                 <!-- Airbnb Card -->
                                 <div class="airbnb-card">
-                                    <img class="rbnb-card-logo" src="./resources/images/airbnb.svg" alt="Airbnb logo">
+                                    <img class="airbnb-card-logo" src="./resources/images/airbnb.svg" alt="Airbnb logo">
                                     <span class="stars">
                                         <i class="fa-regular fa-star"></i>
                                         <i class="fa-regular fa-star"></i>
@@ -290,16 +321,19 @@ View all-->
                                         <i class="fa-regular fa-star last"></i>
                                     </span>
                                     <p class="rating-stars">4.95 out of 5 stars</p>
-                                    <p class="reating-reviews">From 32 reviews</p>
+                                    <p class="rating-reviews">From 32 reviews</p>
                                 </div>
 
                             </div>
                             <div class="row">
                                 <!-- UI Kit Card -->
+
                                 <div class="card-website-ui-kit">
-                                    <img class="UIKit-logo" src="./resources/images/company_01.png"
+                                    <div>
+                                        <img class="UIKit-logo" src="./resources/images/company_01.png"
                                         alt="website UI kit logo">
-                                    <p>Website UI Kit</p>
+                                    </div>
+                                    <p class="UIKit-title">Website UI Kit</p>
                                     <span class="people-UIKit-container">
                                         <div>
                                             <img class="people-UIKit" src="./resources/images/person_01.jpg" alt="">
@@ -311,6 +345,7 @@ View all-->
                                             <img class="people-UIKit" src="./resources/images/person_03.jpg" alt="">
                                         </div>
                                     </span>
+                                    <hr class="divider">
                                     <span class="UIKit-icons">
                                         <i class="fa-solid fa-paperclip"></i>
                                         <i class="fa-regular fa-eye"></i>
@@ -363,90 +398,114 @@ View all-->
             </div>
 
             <div class="col-lg-6">
+                <button type="button" class="play-btn-2 btn btn-light d-flex align-items-center">Play video</button>
                 <img class="highlights-img" src="./resources/images/img_03.jpg" alt="">
             </div>
-
         </div>
-
-
-        <div class="infiniteSolutions">
-            <div class="info">
-                <h2>
-                    Infinite Solutions
-                </h2>
-                <p class="highlights-paragraphs">
-                    Intuitive markup, powerful and lightning-fast build tools, <br>
-                    everything you need to turn your ideas into incredible products.
-                </p>
+        
+        <!-- Infinite solutions-->
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="infinite-solutions-container">
+                    <div class="infiniteSolutions">
+                        <div class="info">
+                            <h2>
+                            Infinite Solutions
+                            </h2>
+                            <p class="highlights-paragraphs">
+                            Intuitive markup, powerful and lightning-fast build tools, <br>
+                            everything you need to turn your ideas into incredible products.
+                            </p>
+                        </div>
+                        <button class="learn-more-button">
+                            Learn more
+                            <i class="learn-more-arrow fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <button class="learn-more-button">
-                Learn more
-                <i class="learn-more-arrow fa-solid fa-arrow-right"></i>
-            </button>
         </div>
     </section>
 
 
     <section class="awards container-fluid">
 
-        <div class="airbnb-card">
-            <img class="rbnb-card-logo" src="./resources/images/airbnb.svg" alt="Airbnb logo">
-            <span class="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star last"></i>
-            </span>
-            <p class="rating-stars">4.95 out of 5 stars</p>
-            <p class="reating-reviews">From 32 reviews</p>
-        </div>
-
-
-        <div class="amazon award-card">
-            <img class="rbnb-card" src="./resources/images/amazon.svg" alt="Amazon logo">
-            <div class="card-description">
-                <p>
-                    They build modern llooking websites easily using Tabs.
-                </p>
+        <div class="row">
+            <div class="col">
+                <div class="airbnb-card-b">
+                    <img class="airbnb-card-logo-b" src="./resources/images/airbnb.svg" alt="Airbnb logo">
+                    <span class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star last"></i>
+                    </span>
+                    <p class="rating-stars">4.95 out of 5 stars</p>
+                    <p class="reating-reviews">From 32 reviews</p>
+                </div>
             </div>
-            <a href="">Learn More</a>
-        </div>
-
-        <div class="slack award-card">
-            <img class="slack-card" src="./resources/images/slack.svg" alt="Slack logo">
-            <div class="card-description">
-                <p>
-                    They build modern llooking websites easily using Trello.
-                </p>
+            
+            <div class="col">
+                <div class="amazon award-card">
+                    <img src="./resources/images/amazon.svg" alt="Amazon logo">
+                    <div class="card-description">
+                        <p>
+                            They build modern llooking websites easily using Tabs.
+                        </p>
+                    </div>
+                    <a href="">Learn More</a>
+                </div>
             </div>
-            <a href="">Learn More</a>
-        </div>
-
-
-        <div class="spotify-card">
-            <img class="rbnb-card-logo" src="./resources/images/spotify.svg" alt="spotify logo">
-            <span class="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star last"></i>
-            </span>
-            <p class="rating-stars">4.95 out of 5 stars</p>
-            <p class="reating-reviews">From 32 reviews</p>
-        </div>
-
-
-        <div class="paypal award-card">
-            <img class="rbnb-card-logo" src="./resources/images/paypal.svg" alt="paypal logo">
-            <div class="card-description">
-                <p>
-                    They build modern llooking websites easily using Docker.
-                </p>
+            
+            <div class="col">
+                <div class="slack award-card">
+                    <img class="slack-card" src="./resources/images/slack.svg" alt="Slack logo">
+                    <div class="card-description">
+                        <p>
+                            They build modern llooking websites easily using Trello.
+                        </p>
+                    </div>
+                    <a href="">Learn More</a>
+                </div>
             </div>
-            <a href="">Learn More</a>
+
+            <div class="col">
+                <div class="spotify-card">
+                    <img class="spotify-card-logo" src="./resources/images/spotify.svg" alt="spotify logo">
+                    <span class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star last"></i>
+                    </span>
+                    <p class="rating-stars">4.95 out of 5 stars</p>
+                    <p class="reating-reviews">From 32 reviews</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="paypal award-card">
+                    <img class="rbnb-card-logo" src="./resources/images/paypal.svg" alt="paypal logo">
+                    <div class="card-description">
+                        <p>
+                            They build modern llooking websites easily using Docker.
+                        </p>
+                    </div>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
         </div>
+
+
+
+
+        
+
+
+        
     </section>
 
 
@@ -454,7 +513,7 @@ View all-->
     <section class="helpful-answers container">
 
         <h2>Helpful Answers</h2>
-        <p>Start building fast, beautiful and modern websites in no time.</p>
+        <p class="answers-description">Start building fast, beautiful and modern websites in no time.</p>
 
         <div class="accordion container">
             <div class="row">
@@ -463,11 +522,11 @@ View all-->
                         <div class="question">
                             <i class="fa-regular fa-file"></i>
                             <p>
-                                Pregunta 1: ¿Qué es un acordeón?
+                                Which license do i need?
                             </p>
                         </div>
                         <div class="answer">
-                            <p>Respuesta 1: Un acordeón es un instrumento musical...</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -476,11 +535,13 @@ View all-->
                         <div class="question">
                             <i class="fa-regular fa-folder"></i>
                             <p>
-                                Pregunta 4: ¿Cómo se toca un acordeón?
+                                Which license do i need?
                             </p>
                         </div>
                         <div class="answer">
-                            <p>Respuesta 4: Para tocar un acordeón, debes...</p>
+                            <p>
+                                How do i get access to my database
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -491,7 +552,7 @@ View all-->
                         <div class="question">
                             <i class="fa-regular fa-file"></i>
                             <p>
-                                Pregunta 1: ¿Qué es un acordeón?
+                                How do i get access to my database
                             </p>
                         </div>
                         <div class="answer">
@@ -504,11 +565,11 @@ View all-->
                         <div class="question">
                             <i class="fa-regular fa-folder"></i>
                             <p>
-                                Pregunta 4: ¿Cómo se toca un acordeón?
+                                How do i get access to my database
                             </p>
                         </div>
                         <div class="answer">
-                            <p>Respuesta 4: Para tocar un acordeón, debes...</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -519,7 +580,7 @@ View all-->
                         <div class="question">
                             <i class="fa-regular fa-file"></i>
                             <p>
-                                Pregunta 1: ¿Qué es un acordeón?
+                                How do i see previous orders?
                             </p>
                         </div>
                         <div class="answer">
@@ -532,7 +593,7 @@ View all-->
                         <div class="question">
                             <i class="fa-regular fa-folder"></i>
                             <p>
-                                Pregunta 4: ¿Cómo se toca un acordeón?
+                                How do i see previous orders?
                             </p>
                         </div>
                         <div class="answer">
@@ -542,13 +603,15 @@ View all-->
                 </div>
             </div>
         </div>
-        <p>
-            I want to start a new project.
-        </p>
-        <button type="button" class="btn btn-primary">Buy now</button>
-        <a href="">
-            Learn more
-        </a>
+        <div class="helpful-answers-CTA">
+            <p>
+                I want to start a new project.
+            </p>
+            <button type="button" class="btn btn-primary">Buy now</button>
+            <a href="">
+                Learn more
+            </a>
+        </div>
     </section>
 
 
@@ -558,43 +621,39 @@ View all-->
 
     <footer class="footer">
         <div class="container-fluid">
-
             <div class="row footer-top">
-                <div class="col-lg-6">
-                    <h3>
-                        Brillant solutions ideas
+                <div class="col-lg-8">
+                    <h3 class="title-footer-solution">
+                        Brillant solutions for your ideas
                     </h3>
-                    <p>
+                    <p class="p-sub">
                         Modern looking websites.
                     </p>
                 </div>
-                <div class="col-lg-3">
-                    <button>Documentation</button>
+                <div class="col-lg-2">
+                    <button class="button-documentation">
+                    <i class="fa-solid fa-book"></i>Documentation
+                    </button>
                 </div>
-                <div class="col-lg-3">
-                    <button>Purchase Now</button>
+                <div class="col-lg-2">
+                    <button class="button-Purchase">Purchase Now</button>
                 </div>
                 <hr class="divider">
             </div>
-
-
             <div class="row footer-center">
                 <div class="col-lg-6">
-
                     <div>
                         <img class="logo-footer" src="./resources/images/odoo-white.svg" alt="logo from Odoo">
-
-                        <p>
+                        <p class="p-odooFooter">
                             Odoo attempts to bring the best development experience to designers and developers by
                             offering
                             the tools
                             needed for having a quick and solid start in most web projects.
-
                         </p>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                        <a class="ico-socialNetwork" href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a class="ico-socialNetwork" href="#"><i class="fa-brands fa-github"></i></a>
+                        <a class="ico-socialNetwork" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="ico-socialNetwork" href="#"><i class="fa-brands fa-facebook"></i></a>
                     </div>
                 </div>
 

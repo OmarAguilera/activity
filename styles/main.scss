@@ -9,7 +9,10 @@
 
 .logo-nav{
     height: 30px;
-    margin-left: 5rem
+    margin-left: 14rem
+}
+.nav-link{
+    margin: 0 0.5rem;
 }
 
 /*Clase div contenedor de botones*/
@@ -18,6 +21,12 @@
     display: inline-block;
     justify-content: end;
 }
+
+.navbar-custom{
+    background-color: $header-color;
+    padding: 0 2rem;
+}
+
 
 .sign-in{
     padding: 1rem;
@@ -33,15 +42,16 @@
     color: $btn-text-color;
 }
 
-
 /*#18144c color azul de bloque infinite Solutions */
+
 
 /*Componente Hero*/
 
 .hero{
+    border-top: 0.5px solid rgba(255, 254, 254, 0.377);
     display: flex;
     flex: 1 1;
-    background-color: $header-color;
+    background-color: #068afe;
     clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
     padding-bottom: 20rem ;
 }
@@ -86,6 +96,7 @@
     padding: 15px 40px;
     border-radius: 10px;
     color: $btn-text-color;
+    cursor: pointer;
 }
 
 
@@ -175,8 +186,10 @@
         .play{
             position: absolute;
             z-index: 1;
-            margin-left: 550px;
+            margin-left: 520px;
             margin-bottom: 540px;
+            border: 5px;
+            width: 120px;
         }
 
 
@@ -225,8 +238,10 @@
 }
 
 .highlights-img {
+    z-index: 1;
+    position: absolute;
     width: 600px;
-    border-radius: 40px;
+    border-radius: 10px;
 }
 
 .highlights-titles {
@@ -268,10 +283,11 @@
 }
 
 .technology-cards {
-    border: #02001d solid 1px;
+    margin-top: 200px;
+    margin-bottom: 200px;
     width: 600px;
-    height: 500px;
-    margin-left: 300px;
+    height: auto;
+    margin-left: 345px;
 }
 
 
@@ -279,19 +295,30 @@
 /* Jimmy Hendrix Card */
 
 .hendrix-card {
-    border: solid black 2px;
+    border: solid rgb(255, 255, 255) 2px;
     width: 255px;
     height: 320px;
     border-radius: 20px;
+    box-shadow: px 1px 0px ;
 }
 
 .technology-img {
-    height: 250px;
+    height: 280px;
+    border-radius: 20px 20px 0 0;
 }
 
 .profile-info {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    border: solid 1px black;
+    border-radius: 0 0 20px 20px;
+    height: 80px;
+    width: 280px;
+    .name-card-JH{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
 }
 
 .JH-circle {
@@ -302,6 +329,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
 }
 
 .like-icon {
@@ -313,11 +341,14 @@
 
 .components-card {
     border: solid 1px wheat;
+    border-radius: 10px;
     display: flex;
-    
+    margin-top: 50px;
 }
 
 .check-circle {
+    margin-left: 10px;
+    margin-top: 18px;
     border-radius: 50px;
     background-color: green;
     height: 50px;
@@ -326,13 +357,19 @@
     justify-content: center;
     align-items: center;
 }
+.components-title {
+    margin-top: 10px;
+    margin-bottom: 1px;
+    font-size: 20px;
+    color: #18144c;
+}
 
 .fa-check {
     color: white;
 }
 
 .text-card-components {
-
+    margin-left: 20px;
 }
 
 
@@ -340,21 +377,41 @@
 /*Airbnb Card*/
 
 .airbnb-card {
+    border-radius: 10px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #d2cfde;
-    height: 250px;
+    background-color: #ffffff;
+    box-shadow: 0 0 1px;
+    height: 270px;
+    margin-top: -80px;
     width: 280px;
+    .airbnb-card-logo{
+        width: 100px;
+        margin-top: 10px;
+        margin-bottom: -40px;
+    }
 }
 
-.rbnb-card-logo {
-    width: 100px;
+.rating-stars {
+    color: #223060;
+    font:{
+        weight: 500;
+        size: 18px;
+    } 
 }
+
+.rating-reviews {
+    color: #62738f;
+}
+
 
 .stars{
     color: gold;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .last {
@@ -364,13 +421,20 @@
 /* UI Kit Card */
 
 .card-website-ui-kit {
-    background-color: #86848b;
-    height: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 0 1px ;
+    height: 320px;
     width: 280px;
-
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .UIKit-logo {
+    margin-top: -50px; /* Ajusta el margen superior negativo para subir la imagen */
+    margin-bottom: 40px; 
     border-radius: 50px;
     height: 70px;
 }
@@ -378,18 +442,49 @@
 .people-UIKit-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .people-UIKit {
+    margin: 0 -7px; /* Ajusta el margen horizontal de las imágenes de personas a 25px */
     height: 40px;
     border-radius: 50px;
     border: 2px solid white;
 }
 
+.UIKit-title {
+    margin-bottom: 50px;
+    margin-top: -30px;
+}
+
+.UIKit-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: -50px;
+}
+
+.fa-eye {
+    margin-right: 30px;
+    margin-left: 30px;
+}
 
 .easy-to-install {
     background-color: orange;
 }
+
+.play-btn-2{
+    position: absolute;
+    z-index: 2;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 125px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 10px;
+    height: 30px;
+    }
+
 
 /*Seccion de manage cards con el boton Add new*/
 
@@ -402,7 +497,7 @@
     margin-bottom: 5rem;
 }
 
-.conteiner-ManageCards{
+.container-ManageCards{
     display: flex;
     justify-content: space-between;
 }
@@ -411,17 +506,18 @@
     display: inline-block;
     white-space: nowrap;
     font-size: large;
-    margin: 1rem 2rem;
+    margin: 1rem 1.5rem;
 }
 
 .button-AddNew{
     background-color: white;
-    margin: 0 2rem;
-    padding: 10px 40px;
+    margin: 0 1.5rem;
+    padding: 10px 30px;
     border-radius: 10px;
     color: $btn-text-color;
     border-radius: 15px;
     border: 2px solid #ccc;
+    cursor: pointer;
 }
 
 
@@ -485,7 +581,7 @@
     justify-content: space-between;
 }
 
-.conteiner-nameCard{
+.container-nameCard{
     text-align: left;
     margin: 10px 0 35px 15px;
 }
@@ -500,7 +596,7 @@
     font-size: 1.3rem;
 }
 
-.conteiner-expiryDate{
+.container-expiryDate{
     text-align: left;
     margin: 10px 150px 35px 15px;
 }
@@ -514,7 +610,47 @@
     font-size: 1.3rem;
 }
 
+//Historial de consumos
+
+.container-cost{
+    margin: 1.5rem;
+}
+
+.cost-Starbucks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cost-name{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.price-cost{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.container-location{
+    opacity: 0.8;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.589);
+}
+
+.container-viewAll{
+    margin: 1.5rem;
+}
+
+.viewAll-anchor{
+    border-bottom: 1px dashed 
+}
 /* Infinite solutions */
+
+.infinite-solutions-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
 
 .infiniteSolutions {
     display: flex;
@@ -548,17 +684,20 @@
 /* Awards */
 
 .awards {
-    background-color: #d2cfde;
+    margin-top: 100px;
+    background-color: #fafbff;
     width: 100%;
     height: 1020px;
     clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
 }
 
 
+
 .award-card {
-    background-color: #1c1245;
+    margin-top: 200px;
+    background-color: #ffffff;
     border-radius: 10px;
-    height: 320px;
+    height: 350px;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -569,24 +708,88 @@
     }
 }
 
+.airbnb-card-b {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 1px;
+    height: 300px;
+    margin-top: 350px;
+    width: 280px;
+    .airbnb-card-logo-b{
+        width: 150px;
+        margin-top: 10px;
+        margin-bottom: -40px;
+    }
+}
+
+.slack {
+    margin-top: 300px;
+}
+
+.spotify-card {
+    margin-top: 200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: solid 1px rgb(17, 5, 5);
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.spotify-card-logo {
+    width: 200px;
+}
+
+.paypal {
+    margin-top: 300px;
+}
+
+.awards:hover {
+    background-color: #f0f0f0; /* Cambia el color de fondo en el hover */
+  }
 
 /* Helpful Answers */
 
-helpful-answers {
+.helpful-answers {
     height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        color: #18144c;
+    }
+    .answers-description {
+        color: #667791;
+    }
   }
   
+  .helpful-answers-CTA {
+    
+  }
+  
+
   /* Aditional style for the answers */
   
   .question-answer {
     margin-bottom: 50px;
     width: 100%;
-   
+    box-shadow: 0 0 1px grey;
+    border-radius: 10px;
+    margin-top: auto;
   }
   
   .question {
-    background-color: #02001d;
-    color: #ffffff;
+    background-color: #ffffff;
+    box-sizing: 0 0 1px grey;
+    color: #2e2bd3;
+    font-weight: 500;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -624,7 +827,40 @@ helpful-answers {
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); 
     padding: 0 350px;
 }
+.title-footer-solution{
+    letter-spacing: 1px;
+}
 
+.p-sub{
+    font-weight: 400;
+}
+
+//Botones documentacion y purchase
+
+.button-documentation{
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background-color: white;
+    white-space: nowrap;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.fa-book{
+    color: #0589fe;
+    margin: 0 1rem 0 0;
+}
+
+.button-Purchase{
+    margin: 0 0 0 20px;
+    font-size: medium;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background-color: #0589fe;
+    white-space: nowrap;
+    cursor: pointer;
+}
 .footer-top{
     
 }
@@ -639,7 +875,13 @@ helpful-answers {
 }
 
 .logo-footer {
-    height: 30px;
+    margin: 2rem 0 2rem 0;
+    height: 40px;
+}
+
+.p-odooFooter{
+    font-weight: lighter;
+    width: 25rem;
 }
 
 
@@ -648,4 +890,15 @@ helpful-answers {
     height: 1px; 
     background: linear-gradient(to right, transparent, #613737, transparent); 
     width: 90%;
+}
+
+//redes sociales 
+
+.ico-socialNetwork{
+    margin: 1rem 1rem 0 0;
+    color: white; 
+}
+
+.fa-dribbble{
+    font-size: large;
 }
