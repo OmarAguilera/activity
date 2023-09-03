@@ -118,21 +118,38 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: solid 1px rgb(41, 41, 38);
   border-radius: 20px;
   width: 500px;
   height: 380px;
   box-shadow: 1px 1px 5px 1px grey;
 }
-.progress-table .progress {
+.progress-table h2 {
+  color: rgb(80, 41, 195);
+  margin-top: 20px;
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 25px;
+}
+.progress-table .bars > * {
+  margin-bottom: 40px;
+}
+.progress-table .bars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.progress-table .bars p {
+  color: rgb(80, 41, 195);
+}
+.progress-table .bars .progress {
   width: 410px;
-  background: rgb(155, 157, 153);
+  background: rgb(144, 134, 134);
   border: none;
   height: 20px;
   border-radius: 10px;
-  height: 5px;
+  height: 3px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -141,20 +158,17 @@
   justify-content: center;
 }
 
-.progress {
-  background: rgb(155, 157, 153);
-  border: none;
-  height: 20px;
-  border-radius: 10px;
-  height: 5px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+/* .progress{
+    background: rgb(255, 255, 255);
+    border: none;
+    height: 20px;
+    border-radius: 10px;
+    height: 5px;
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
 /* Progress bar style webkit (Chrome) */
 .progress::-webkit-progress-value {
   background-color: #5b6a64;
@@ -162,7 +176,7 @@
 
 /* Progress bar style Mozilla (Firefox) */
 .progress::-moz-progress-bar {
-  background-color: #cbbb5f;
+  background-color: #ace65b;
 }
 
 .team-img {
@@ -231,6 +245,7 @@
 
 .highlights-titles {
   color: #152c5b;
+  font-size: 40px;
 }
 
 .highlights-paragraphs {
@@ -243,8 +258,15 @@
   width: 200px;
 }
 
-.app-icon {
-  width: 150px;
+.appstore-icon {
+  margin-top: 80px;
+  width: 200px;
+}
+
+.playstore-icon {
+  margin-top: 88px;
+  width: 200px;
+  height: 65px;
 }
 
 .oval {
@@ -277,9 +299,9 @@
 
 /* Jimmy Hendrix Card */
 .hendrix-card {
-  border: solid rgb(255, 255, 255) 2px;
-  width: 255px;
-  height: 320px;
+  border: solid gray 1px;
+  width: 282px;
+  height: 355px;
   border-radius: 20px;
   box-shadow: px 1px 0px;
 }
@@ -293,7 +315,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: solid 1px black;
   border-radius: 0 0 20px 20px;
   height: 80px;
   width: 280px;
@@ -304,9 +325,9 @@
 }
 
 .JH-circle {
-  height: 50px;
-  width: 50px;
-  background-color: rgb(88, 88, 46);
+  height: 40px;
+  width: 40px;
+  background-color: yellow;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -445,6 +466,7 @@
 
 .easy-to-install {
   background-color: orange;
+  margin-bottom: 30px;
 }
 
 .play-btn-2 {
@@ -652,6 +674,7 @@
   margin-top: 200px;
   background-color: #ffffff;
   border-radius: 10px;
+  border: solid 1px rgb(231, 231, 231);
   height: 350px;
   width: 300px;
   display: flex;
@@ -662,6 +685,15 @@
 .award-card img {
   width: 150px;
 }
+.award-card p {
+  text-align: center;
+  color: grey;
+}
+.award-card a {
+  border-bottom: 3px solid black;
+  padding-bottom: 4px;
+  color: #18144c;
+}
 
 .airbnb-card-b {
   border-radius: 10px;
@@ -670,6 +702,7 @@
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  border: solid 1px rgb(231, 231, 231);
   box-shadow: 0 0 1px;
   height: 300px;
   margin-top: 350px;
@@ -683,13 +716,14 @@
 
 .slack {
   margin-top: 300px;
+  border: solid 1px rgb(231, 231, 231);
 }
 
 .spotify-card {
   margin-top: 200px;
   background-color: #ffffff;
   border-radius: 10px;
-  border: solid 1px rgb(17, 5, 5);
+  border: solid 1px rgb(231, 231, 231);
   height: 350px;
   width: 300px;
   display: flex;
@@ -704,6 +738,7 @@
 
 .paypal {
   margin-top: 300px;
+  border: solid 1px rgb(231, 231, 231);
 }
 
 .awards:hover {
@@ -756,6 +791,19 @@
   background-color: #02001d;
 }
 
+.helpful-answers-CTA {
+  display: flex;
+  flex-direction: row;
+}
+.helpful-answers-CTA button {
+  width: 170px;
+  height: 50px;
+  border-radius: 10px;
+}
+.helpful-answers-CTA a {
+  align-self: center;
+}
+
 /* Style for the active answer*/
 .question.active {
   /* Active icon styles*/
@@ -773,7 +821,7 @@
   align-items: center;
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-  padding: 0 350px;
+  padding: 0rem 350px;
 }
 
 .title-footer-solution {
@@ -827,10 +875,41 @@
 }
 
 .ico-socialNetwork {
-  margin: 1rem 1rem 0 0;
-  color: white;
+  margin: 1rem 1.5rem 0rem 0;
+  color: rgba(255, 255, 255, 0.603);
 }
 
-.fa-dribbble {
+.socialNetwork {
   font-size: large;
+  margin: 1rem 1.5rem 3rem 0;
+}
+
+.title-AccountAboutCompany {
+  margin: 2rem 0 2rem 0;
+  font-size: large;
+}
+
+.ul-AccountAboutCompany {
+  list-style-type: none;
+}
+
+.li-AccountAboutCompany {
+  margin: 5px 0;
+}
+
+.anchor-AccountAboutCompany {
+  color: rgba(255, 255, 255, 0.555);
+}
+
+.rightReserved {
+  color: rgba(255, 255, 255, 0.555);
+}
+
+.div-terms {
+  display: flex;
+}
+
+.p-terms {
+  margin: 0 1rem;
+  color: rgba(255, 255, 255, 0.555);
 }/*# sourceMappingURL=main.css.map */
