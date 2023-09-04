@@ -5,7 +5,9 @@
     border: 0;
     box-sizing: border-box;
 }
-//clase logo
+
+
+/* Logo */
 
 .logo-nav{
     height: 30px;
@@ -15,7 +17,8 @@
     margin: 0 0.5rem;
 }
 
-/*Clase div contenedor de botones*/
+/*Button container*/
+
 .button-container{
     padding: 8px 0 8px 0;
     display: inline-block;
@@ -42,10 +45,9 @@
     color: $btn-text-color;
 }
 
-/*#18144c color azul de bloque infinite Solutions */
 
 
-/*Componente Hero*/
+/*Hero*/
 
 .hero{
     border-top: 0.5px solid rgba(255, 254, 254, 0.377);
@@ -54,6 +56,7 @@
     background-color: #068afe;
     clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
     padding-bottom: 20rem ;
+    
 }
 
 .hero-text-block{
@@ -77,11 +80,11 @@
 }
  
 .main-title-continue {
-    display: block; /* Hacer que "done rigth" sea un bloque */
-    margin-top: 10px; /* Espacio entre las líneas */
+    display: block; /* Another way to separate sentences. Of course it can be done in other ways */
+    margin-top: 10px; /* letters leading */
 }
 
-/*parte del texto debajo del titulo */
+/*Hero description */
 .hero-description{
     margin: 50px 0;
     font-size: 1.5rem;
@@ -99,9 +102,7 @@
     cursor: pointer;
 }
 
-
-
-/*Bloque search trusted by*/
+/* Trusted by - brands */
 
 .search{
     display: flex;
@@ -114,290 +115,272 @@
 }
 
 
-
 /* Highlights section */
 
 
 .table-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 720px;
-            width: 700px;
-            margin-left: 20%;
-        }
-        .progress-table{
-            position: absolute;
-            z-index: 1;
-            display: flex;
-            flex-direction: column;
-            border-radius: 20px;
-            width: 500px;
-            height: 380px;
-            box-shadow: 1px 1px 5px 1px grey;
-            h2 {
-                color: rgb(80, 41, 195);
-                margin-top: 20px;
-                margin-left: 40px;
-                font: {
-                    weight: 400;
-                    size: 25px;
-                }
-
-            }
-            .bars > * {
-                margin-bottom: 40px;
-            }
-            
-            .bars {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                margin-top:40px;
-                p {
-                    color: rgb(80, 41, 195);
-                }
-                .progress{
-                    width: 410px;
-                    background: rgb(144, 134, 134);
-                    border: none;
-                    height: 20px;
-                    border-radius: 10px;
-                    height: 3px;
-                    appearance: none;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 720px;
+    max-width: 700px;
+}
+.progress-table{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    max-width: 500px;
+    height: 380px;
+    box-shadow: 1px 1px 5px 1px grey;
+    h2 {
+        color: rgb(80, 41, 195);
+        margin-top: 20px;
+        margin-left: 40px;
+        font: {
+            weight: 400;
+            size: 25px;
         }
 
-        /* .progress{
-            background: rgb(255, 255, 255);
+    }
+    .bars > * {
+        margin-bottom: 40px;
+    }
+    
+    .bars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top:40px;
+        p {
+            color: rgb(80, 41, 195);
+        }
+        .progress{
+            max-width: 410px;
+            background: rgb(144, 134, 134);
             border: none;
             height: 20px;
             border-radius: 10px;
-            height: 5px;
+            height: 3px;
             appearance: none;
             display: flex;
             align-items: center;
             justify-content: center;
-        } */
+        }
+    }
+}
 
-                /* Progress bar style webkit (Chrome) */
-        .progress::-webkit-progress-value {
-            background-color: #5b6a64; 
-        }
+/* Progress bar style webkit (Chrome) */
+.progress::-webkit-progress-value {
+    background-color: #ace65b; 
+}
 
-        /* Progress bar style Mozilla (Firefox) */
-        .progress::-moz-progress-bar {
-            background-color: #ace65b; 
-        }
+/* Progress bar style Mozilla (Firefox) */
+.progress::-moz-progress-bar {
+    background-color: #ace65b; 
+}
 
-        .team-img{
-            margin-bottom: 300px;
-            margin-left: 300px;
-            position: absolute;
-            z-index: 1;
-            height: 300px;
-            border-radius: 10px;
-        }
-        .play{
-            position: absolute;
-            z-index: 1;
-            margin-left: 520px;
-            margin-bottom: 540px;
-            border: 5px;
-            width: 120px;
-        }
+.team-img{
+    margin-bottom: 300px;
+    margin-left: 300px;
+    position: absolute;
+    z-index: 1;
+    height: 300px;
+    border-radius: 10px;
+}
+.play{
+    position: absolute;
+    z-index: 1;
+    margin-left: 520px;
+    margin-bottom: 540px;
+    border: 5px;
+    max-width: 120px;
+}
 
 
 .tools-info{
-    margin-top: 200px;
-    margin-right: 300px;
-}
-
-.features-example {
-
+margin-top: 200px;
+margin-right: 300px;
 }
 
 .features-info {
-    width: 600px;
-    margin-top: 70px;
-    margin-right: 30px;
-    margin-left: 400px;
-    .features-title{
-        font-size: 20px;
-        color: #18144c;
-    }
+max-width: 600px;
+margin-top: 70px;
+margin-right: 30px;
+margin-left: 400px;
+.features-title{
+font-size: 25px;
+color: #18144c;
+margin-bottom: 50px;
+}
 }
 
 
 .technology-info {
-    margin-top: 200px;
-    margin-right: 30px;
-    width: 500px;
-    
+margin-top: 200px;
+margin-right: 30px;
+max-width: 500px;
+
 }
 
 .features-img {
-    height: 460px;
-    border-radius: 10px;
+height: 460px;
+border-radius: 10px;
 }
 
 
 .easy-to-install-info {
-    margin-top: 100px;
-   width: 600px;
-   height: 400px;
-   margin-left: 300px;
+margin-top: 100px;
+max-width: 600px;
+height: 400px;
+margin-left: 300px;
 }
 
 .product-highlights {
-    background-color: $main-color;
-    margin-top: 100px;
+background-color: $main-color;
+margin-top: 100px;
 }
 
 .highlights-img {
-    z-index: 1;
-    position: absolute;
-    width: 600px;
-    border-radius: 10px;
+z-index: 1;
+position: absolute;
+max-width: 600px;
+border-radius: 10px;
 }
 
 .highlights-titles {
-    color: $titles-color;
-    font-size: 40px;
+color: $titles-color;
+font-size: 40px;
 }
 
 .highlights-paragraphs {
-    color: $paragraphs-color;
+color: $paragraphs-color;
+margin-top: 50px;
 }
 
 .card-website-ui-kit {
-    background-color: #02001d;
-    height: 250px;
-    width: 200px;
+background-color: #02001d;
+height: 250px;
+max-width: 200px;
 }
 
 .appstore-icon {
-    margin-top: 80px;
-    width: 200px;
+margin-top: 80px;
+max-width: 200px;
 }
 .playstore-icon {
-    margin-top: 88px;
-    width: 200px;
-    height: 65px;
+margin-top: 88px;
+max-width: 200px;
+height: 65px;
 }
 
 .oval {
-    text-align: center;
-    border-radius: 50px;
-    height: 30px;
-    width: 120px;
-    color: white;
+text-align: center;
+border-radius: 50px;
+height: 30px;
+max-width: 120px;
+color: white;
 }
 
 .tools {
-    background-color: orange;
+background-color: orange;
 }
 
 .features {
-    background-color: green;
+background-color: green;
 }
 
 .technology{
-    background-color: blue;
+background-color: blue;
 }
 
 .technology-cards {
-    margin-top: 200px;
-    margin-bottom: 200px;
-    width: 600px;
-    height: auto;
-    margin-left: 345px;
+margin-top: 200px;
+margin-bottom: 200px;
+max-width: 600px;
+height: auto;
+margin-left: 345px;
 }
-
-
 
 /* Jimmy Hendrix Card */
 
 .hendrix-card {
-    border: solid gray 1px;
-    width: 282px;
-    height: 355px;
-    border-radius: 20px;
-    box-shadow: px 1px 0px ;
+border: solid gray 1px;
+max-width: 282px;
+height: 355px;
+border-radius: 20px;
+box-shadow: px 1px 0px ;
 }
 
 .technology-img {
-    height: 280px;
-    border-radius: 20px 20px 0 0;
+height: 280px;
+border-radius: 20px 20px 0 0;
 }
 
 .profile-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 0 0 20px 20px;
-    height: 80px;
-    width: 280px;
-    .name-card-JH{
-        margin-left: 20px;
-        margin-top: 10px;
-    }
+display: flex;
+flex-direction: row;
+align-items: center;
+border-radius: 0 0 20px 20px;
+height: 80px;
+max-width: 280px;
+.name-card-JH{
+margin-left: 20px;
+margin-top: 10px;
+}
 }
 
 .JH-circle {
-    height: 40px;
-    width: 40px;
-    background-color: yellow;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
+height: 40px;
+max-width: 40px;
+background-color: yellow;
+border-radius: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 10px;
 }
 
 .like-icon {
-    color: #02001d;
+color: #02001d;
 }
 
 
 /* Components card */
 
 .components-card {
-    border: solid 1px wheat;
-    border-radius: 10px;
-    display: flex;
-    margin-top: 50px;
+border: solid 1px wheat;
+border-radius: 10px;
+display: flex;
+margin-top: 50px;
 }
 
 .check-circle {
-    margin-left: 10px;
-    margin-top: 18px;
-    border-radius: 50px;
-    background-color: green;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+margin-left: 10px;
+margin-top: 18px;
+border-radius: 50px;
+background-color: green;
+height: 50px;
+max-width: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .components-title {
-    margin-top: 10px;
-    margin-bottom: 1px;
-    font-size: 20px;
-    color: #18144c;
+margin-top: 10px;
+margin-bottom: 1px;
+font-size: 20px;
+color: #18144c;
 }
 
 .fa-check {
-    color: white;
+color: white;
 }
 
 .text-card-components {
-    margin-left: 20px;
+margin-left: 20px;
 }
 
 
@@ -405,307 +388,299 @@
 /*Airbnb Card*/
 
 .airbnb-card {
-    border-radius: 10px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    box-shadow: 0 0 1px;
-    height: 270px;
-    margin-top: -80px;
-    width: 280px;
-    .airbnb-card-logo{
-        width: 100px;
-        margin-top: 10px;
-        margin-bottom: -40px;
-    }
+border-radius: 10px;
+margin-bottom: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #ffffff;
+box-shadow: 0 0 1px;
+height: 270px;
+margin-top: -80px;
+max-width: 280px;
+.airbnb-card-logo{
+max-width: 100px;
+margin-top: 10px;
+margin-bottom: -40px;
+}
 }
 
 .rating-stars {
-    color: #223060;
-    font:{
-        weight: 500;
-        size: 18px;
-    } 
+color: #223060;
+font:{
+weight: 500;
+size: 18px;
+} 
 }
 
 .rating-reviews {
-    color: #62738f;
+color: #62738f;
 }
 
 
 .stars{
-    color: gold;
-    margin-top: 60px;
-    margin-bottom: 30px;
+color: gold;
+margin-top: 60px;
+margin-bottom: 30px;
 }
 
 .last {
-    color: rgb(75, 54, 54);
+color: rgb(75, 54, 54);
 }
 
 /* UI Kit Card */
 
 .card-website-ui-kit {
-    background-color: #ffffff;
-    box-shadow: 0 0 1px ;
-    height: 320px;
-    width: 280px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+background-color: #ffffff;
+box-shadow: 0 0 1px ;
+height: 320px;
+max-width: 280px;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .UIKit-logo {
-    margin-top: -50px; /* Ajusta el margen superior negativo para subir la imagen */
-    margin-bottom: 40px; 
-    border-radius: 50px;
-    height: 70px;
+margin-top: -50px;
+margin-bottom: 40px; 
+border-radius: 50px;
+height: 70px;
 }
 
 .people-UIKit-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
 
 .people-UIKit {
-    margin: 0 -7px; /* Ajusta el margen horizontal de las imágenes de personas a 25px */
-    height: 40px;
-    border-radius: 50px;
-    border: 2px solid white;
+margin: 0 -7px;
+height: 40px;
+border-radius: 50px;
+border: 2px solid white;
 }
 
 .UIKit-title {
-    margin-bottom: 50px;
-    margin-top: -30px;
+margin-bottom: 50px;
+margin-top: -30px;
 }
 
 .UIKit-icons {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    margin-bottom: -50px;
+display: flex;
+flex-direction: row;
+margin-top: 10px;
+margin-bottom: -50px;
 }
 
 .fa-eye {
-    margin-right: 30px;
-    margin-left: 30px;
+margin-right: 30px;
+margin-left: 30px;
 }
 
 .easy-to-install {
-    background-color: orange;
-    margin-bottom: 30px;
+background-color: orange;
+margin-bottom: 30px;
 }
 
 .play-btn-2{
-    position: absolute;
-    z-index: 2;
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 125px;
-    height: 30px;
-    justify-content: center;
-    border-radius: 10px;
-    height: 30px;
-    }
-
-
-/*Seccion de manage cards con el boton Add new*/
-
+position: absolute;
+z-index: 2;
+margin-top: 20px;
+margin-left: 20px;
+max-width: 125px;
+height: 30px;
+justify-content: center;
+border-radius: 10px;
+height: 30px;
+}
 
 .manageCards-container{
-    padding: 2rem 1rem;
-    margin: 8rem  10rem;
-    background-color: white;
-    border-radius: 10px 10px 100px 10px; 
-    margin-bottom: 5rem;
+padding: 2rem 1rem;
+margin: 8rem  10rem;
+background-color: white;
+border-radius: 10px 10px 100px 10px; 
+margin-bottom: 5rem;
 }
 
 .container-ManageCards{
-    display: flex;
-    justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 
 .p-manageCards{
-    display: inline-block;
-    white-space: nowrap;
-    font-size: large;
-    margin: 1rem 1.5rem;
+display: inline-block;
+white-space: nowrap;
+font-size: large;
+margin: 1rem 1.5rem;
 }
 
 .button-AddNew{
-    background-color: white;
-    margin: 0 1.5rem;
-    padding: 10px 30px;
-    border-radius: 10px;
-    color: $btn-text-color;
-    border-radius: 15px;
-    border: 2px solid #ccc;
-    cursor: pointer;
+background-color: white;
+margin: 0 1.5rem;
+padding: 10px 30px;
+border-radius: 10px;
+color: $btn-text-color;
+border-radius: 15px;
+border: 2px solid #ccc;
+cursor: pointer;
 }
 
-
-//Imagen card 
+/* Credit card secundary styles */
 
 .img-card{
-    color: white;
-    margin: 20px 20px;
-    background-color: #1c1245;
-    border-radius: 10px;
+color: white;
+margin: 20px 20px;
+background-color: #1c1245;
+border-radius: 10px;
 }
 
 .container-card{
-    margin: 10px 20px;
+margin: 10px 20px;
 }
 
 
 .iconMaster-textActive{
-    padding: 2rem 1rem;
-    display: flex;
-    justify-content: space-between;
+padding: 2rem 1rem;
+display: flex;
+justify-content: space-between;
 }
 
 .svgMastercard{
-    width: 4rem;
+max-width: 4rem;
 }
 
 .cardStatus-text{
-    color: white;
-    background-color: #5ec9a7;
-    padding: 0.8rem 1rem;
-    border-radius: 1rem;
+color: white;
+background-color: #5ec9a7;
+padding: 0.8rem 1rem;
+border-radius: 1rem;
 }
 
-//Numero de tarjeta 
 .container-cardNumber{
-    padding: 0 1rem;
-    
+padding: 0 1rem;
+
 }
 
 .p-cardNumber{
-    text-align: left;
-    font-size: small;
-    font-weight: lighter;
+text-align: left;
+font-size: small;
+font-weight: lighter;
 }
 
 .card-number{
-    font-weight: 500;
-    font-size: xx-large;
-    text-align: right;
-    letter-spacing: 2px;
-    white-space: nowrap;
+font-weight: 500;
+font-size: xx-large;
+text-align: right;
+letter-spacing: 2px;
+white-space: nowrap;
 }
 
-//nombre de usuario de tarjeta y expiracion
-
-
 .name-expiryDate{
-    display: flex;
-    flex: 1 1;
-    justify-content: space-between;
+display: flex;
+flex: 1 1;
+justify-content: space-between;
 }
 
 .container-nameCard{
-    text-align: left;
-    margin: 10px 0 35px 15px;
+text-align: left;
+margin: 10px 0 35px 15px;
 }
 
 .usuarioName{
-    text-align: left;
-    font-size: small;
-    font-weight: 100;
+text-align: left;
+font-size: small;
+font-weight: 100;
 
 }
 .namePerson{
-    font-size: 1.3rem;
+font-size: 1.3rem;
 }
 
 .container-expiryDate{
-    text-align: left;
-    margin: 10px 150px 35px 15px;
+text-align: left;
+margin: 10px 150px 35px 15px;
 }
 
 .p-expiryDate{
-    text-align: left;
-    font-size: small;
-    font-weight: 100;
+text-align: left;
+font-size: small;
+font-weight: 100;
 }
 .dateExpiry{
-    font-size: 1.3rem;
+font-size: 1.3rem;
 }
 
-//Historial de consumos
+/* Spending history */
 
 .container-cost{
-    margin: 1.5rem;
+margin: 1.5rem;
 }
 
 .cost-Starbucks{
-    display: flex;
-    justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 
 .cost-name{
-    font-size: 1.3rem;
-    font-weight: 600;
+font-size: 1.3rem;
+font-weight: 600;
 }
 
 .price-cost{
-    font-size: 1.3rem;
-    font-weight: 600;
+font-size: 1.3rem;
+font-weight: 600;
 }
 
 .container-location{
-    opacity: 0.8;
-    border-bottom: 0.5px solid rgba(128, 128, 128, 0.589);
+opacity: 0.8;
+border-bottom: 0.5px solid rgba(128, 128, 128, 0.589);
 }
 
 .container-viewAll{
-    margin: 1.5rem;
+margin: 1.5rem;
 }
 
 .viewAll-anchor{
-    border-bottom: 1px dashed 
+border-bottom: 1px dashed 
 }
-/* Infinite solutions */
+
+
+/* Infinite solutions block */
 
 .infinite-solutions-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 200px;
-    margin-bottom: 200px;
+display: flex;
+justify-content: center;
+margin-top: 200px;
+margin-bottom: 200px;
 }
 
 .infiniteSolutions {
-    display: flex;
-    background-color: $secundary-color;
-    height: 300px;
-    border-radius: 0px 80px 0px 80px;
-    width: 1200px;
-    color: $main-color;
-    align-items: center;
+display: flex;
+background-color: $secundary-color;
+height: 300px;
+border-radius: 0px 80px 0px 80px;
+max-width: 1200px;
+color: $main-color;
+align-items: center;
 }
 
 .info {
-    margin-left: 100px;
+margin-left: 100px;
 }
 
-
 .learn-more-button{
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    margin: 200px;
+max-width: 150px;
+height: 50px;
+border-radius: 10px;
+margin: 200px;
 
 }
 
 .learn-more-arrow {
-    color: #18144c;
+color: #18144c;
 }
 
 
@@ -713,162 +688,160 @@
 /* Awards */
 
 .awards {
-    margin-top: 100px;
-    background-color: #fafbff;
-    width: 100%;
-    height: 1020px;
-    clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
+margin-top: 100px;
+background-color: #fafbff;
+max-width: 100%;
+height: 1020px;
+clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
 }
 
 
 
 .award-card {
-    margin-top: 200px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: solid 1px rgb(231, 231, 231);
-    height: 350px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    img {
-        width: 150px;
-    }
-    p {
-        text-align: center;
-        color: grey
-    }
-    a {
-        border-bottom: 3px solid black;
-        padding-bottom: 4px;
-        color: #18144c;
-    }
+margin-top: 200px;
+background-color: #ffffff;
+border-radius: 10px;
+border: solid 1px rgb(231, 231, 231);
+height: 350px;
+max-width: 300px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+img {
+max-width: 150px;
+}
+p {
+text-align: center;
+color: grey
+}
+a {
+border-bottom: 3px solid black;
+padding-bottom: 4px;
+color: #18144c;
+}
 }
 
 .airbnb-card-b {
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    border: solid 1px rgb(231, 231, 231);
-    box-shadow: 0 0 1px;
-    height: 300px;
-    margin-top: 350px;
-    width: 280px;
-    .airbnb-card-logo-b{
-        width: 150px;
-        margin-top: 10px;
-        margin-bottom: -40px;
-    }
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #ffffff;
+border: solid 1px rgb(231, 231, 231);
+box-shadow: 0 0 1px;
+height: 300px;
+margin-top: 350px;
+max-width: 280px;
+.airbnb-card-logo-b{
+max-width: 150px;
+margin-top: 10px;
+margin-bottom: -40px;
+}
 }
 
 .slack {
-    margin-top: 300px;
-    border: solid 1px rgb(231, 231, 231);
+margin-top: 300px;
+border: solid 1px rgb(231, 231, 231);
 }
 
 .spotify-card {
-    margin-top: 200px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: solid 1px rgb(231, 231, 231);
-    height: 350px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+margin-top: 200px;
+background-color: #ffffff;
+border-radius: 10px;
+border: solid 1px rgb(231, 231, 231);
+height: 350px;
+max-width: 300px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
 .spotify-card-logo {
-    width: 200px;
+max-width: 200px;
 }
 
 .paypal {
-    margin-top: 300px;
-    border: solid 1px rgb(231, 231, 231);
+margin-top: 300px;
+border: solid 1px rgb(231, 231, 231);
 }
 
 .awards:hover {
-    background-color: #f0f0f0; /* Cambia el color de fondo en el hover */
-  }
+background-color: #f0f0f0;
+}
+
+
 
 /* Helpful Answers */
 
 .helpful-answers {
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h2 {
-        color: #18144c;
-    }
-    .answers-description {
-        color: #667791;
-    }
-  }
-  
-  .helpful-answers-CTA {
-    
-  }
-  
+height: 700px;
+display: flex;
+flex-direction: column;
+align-items: center;
+h2 {
+color: #18144c;
+}
+.answers-description {
+color: #667791;
+}
+}
 
-  /* Aditional style for the answers */
-  
-  .question-answer {
-    margin-bottom: 50px;
-    width: 100%;
-    box-shadow: 0 0 1px grey;
-    border-radius: 10px;
-    margin-top: auto;
-  }
-  
-  .question {
-    background-color: #ffffff;
-    box-sizing: 0 0 1px grey;
-    color: #2e2bd3;
-    font-weight: 500;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-  }
-  
-  .answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-    padding: 0 20px; /* Aditional space for the anwers*/
-    background-color: #02001d;
-  }
 
-  .helpful-answers-CTA{
-    display: flex;
-    flex-direction: row;
-    button {
-        width: 170px;
-        height: 50px;
-        border-radius: 10px;
-    }
-    a {
-        align-self: center;
-    }
-  }
-  
-  /* Style for the active answer*/
-  .question.active {
-    /* Active icon styles*/
-    background-color: #068afe;
-    color: #1c1c16;
-  }
+/* Aditional style for the answers */
+
+.question-answer {
+margin-bottom: 50px;
+max-width: 100%;
+box-shadow: 0 0 1px grey;
+border-radius: 10px;
+margin-top: auto;
+}
+
+.question {
+background-color: #ffffff;
+box-sizing: 0 0 1px grey;
+color: #2e2bd3;
+font-weight: 500;
+cursor: pointer;
+padding: 18px;
+max-width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+transition: 0.4s;
+}
+
+.answer {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease-in-out;
+padding: 0 20px; /* Aditional space for the anwers*/
+background-color: #02001d;
+}
+
+.helpful-answers-CTA{
+display: flex;
+flex-direction: row;
+button {
+max-width: 170px;
+height: 50px;
+border-radius: 10px;
+}
+a {
+align-self: center;
+}
+}
+
+/* Style for the active answer*/
+.question.active {
+/* Active icon styles*/
+background-color: #068afe;
+color: #1c1c16;
+}
 
 /* Footer */
 
@@ -880,8 +853,8 @@
     justify-content: center;
     align-items: center;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); 
-    padding: 0rem 350px ;
-    
+    padding:  350px ;
+    padding-bottom: 10rem;
 }
 .title-footer-solution{
     letter-spacing: 1px;
@@ -891,7 +864,8 @@
     font-weight: 400;
 }
 
-//Botones documentacion y purchase
+/* Footer buttons, documantations and last CTA */
+
 
 .button-documentation{
     border-radius: 10px;
@@ -917,18 +891,6 @@
     white-space: nowrap;
     cursor: pointer;
 }
-.footer-top{
-    
-}
-
-.footer-bottom {
-    
-}
-
-
-.footer-center {
-    
-}
 
 .logo-footer {
     margin: 2rem 0 2rem 0;
@@ -937,7 +899,7 @@
 
 .p-odooFooter{
     font-weight: lighter;
-    width: 25rem;
+    max-width: 5rem 25rem;
 }
 
 
@@ -945,10 +907,10 @@
     border: none;
     height: 1px; 
     background: linear-gradient(to right, transparent, #613737, transparent); 
-    width: 90%;
+    max-width: 90%;
 }
 
-//redes sociales 
+/* Social media */
 
 .ico-socialNetwork{
     margin: 1rem 1.5rem 0rem 0;
@@ -961,7 +923,7 @@
 }
 
 
-// textos account about company
+/* Account, about, company */
 
 .title-AccountAboutCompany{
     margin: 2rem 0 2rem 0;
@@ -991,4 +953,118 @@
 .p-terms{
     margin: 0 1rem;
     color: rgba(255, 255, 255, 0.555);
+
+
 }
+
+/* Additional Media Queries  */
+/* Of course i have used bootstrap breakpoints for my layout but also some extra styles are needed*/
+
+
+@media (max-width: 992px){
+    .button-container{
+        padding: 4px 0 8px 0;
+        display: flex;
+        justify-content: end;
+        white-space: nowrap;
+    }
+    .sign-in{
+        padding: 0.5rem 1rem ;
+        background-color: #0088ff00;
+        color: $header-secundary-text;
+        font-size: small;
+    }
+    
+    .button-BuyNow{
+        font-size: small;
+        margin: 0 7rem 0 0;
+        padding: 0.5rem 1rem ;
+        border-radius: 10px;
+        color: $btn-text-color;
+    }
+    
+    .hero{
+        display: block;
+        padding-bottom: 50rem ;
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 79%);
+        
+    }
+    .hero-text-block{
+        padding: 5rem 15rem 5rem 15rem;
+       
+    }
+    
+    /* Credit card */
+    .card-number{
+        margin-right: 3rem
+        }
+    
+}
+
+
+
+@media (max-width: 992px) {
+    .table-container {
+        display: flex;
+        justify-content: start;
+        height: 720px;
+        max-width: 700px;
+    }
+    .progress-table{
+        max-width: 350px;
+        height: 280px;
+        box-shadow: 1px 1px 5px 1px grey;
+        h2 {
+            margin-top: 20px;
+            margin-left: 20px;
+            font: {
+                weight: 400;
+                size: 18px;
+            }
+        }
+        .bars > * {
+            margin-bottom: 15px;
+        }
+        
+        .bars {
+            display: flex;
+            justify-content: center;
+            margin-top:20px;
+            .progress {
+                max-width: 310px;
+                background: rgb(144, 134, 134);
+                border: none;
+                height: 20px;
+                border-radius: 10px;
+                height: 3px;
+                appearance: none;
+                justify-content: center;
+            }
+        }
+    }
+    .team-img{
+        margin-bottom: 200px;
+        margin-left: 200px;
+        height: 250px;
+        border-radius: 10px;
+    }
+    .play{
+        margin-left: 450px;
+        margin-bottom: 450px;
+        border: 5px;
+        max-width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .tools-info{
+        margin-top: 200px;
+        margin-right: 450px;
+        max-width: 600px;
+            h2 {
+                font: {
+                    weight: 600;
+                    size: 25px;
+                }
+            }
+        }
+  }

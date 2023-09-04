@@ -4,17 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odoo</title>
+    <title>Odoo excercise</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
     <script src="https://kit.fontawesome.com/61810550b3.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="">
+<body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar navbar-dark navbar-custom">
-            <a class="navbar-brand" href="#"><img class="logo-nav" src="./resources/images/odoo-nav.png" alt="odoo"></a>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <a class="navbar-brand" href="#">
+                <img class="logo-nav" src="./resources/images/odoo.png" alt="">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,11 +25,11 @@
             <div class="collapse navbar-collapse d-flex justify-content-center bd-highlight mb-2"
                 id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-link active" href="#">Products</a>
-                    <a class="nav-link active" href="#">Pages</a>
-                    <a class="nav-link active">App</a>
-                    <a class="nav-link active">Docs</a>
+                    <a class="nav-link Active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link " href="#">Products</a>
+                    <a class="nav-link " href="#">Pages</a>
+                    <a class="nav-link " href="#">App</a>
+                    <a class="nav-link " href="#">Docs</a>
                 </div>
             </div>
             <div class="button-container">
@@ -38,11 +41,15 @@
                 </button>
             </div>
         </nav>
-
+      </div>
+    </header>
         <div class="hero"> 
-
-            <!--Parte del Header bloque con titulo azul-->
-            <div class="hero-text-block">
+          <div class="container">
+            <div class="row justify-content-between">
+            <!--
+                HERO
+            -->
+            <div class="hero-text-block col-lg-6">
                 <div>
                     <h1 class="main-title">
                         Development <span class="main-title-continue">done right</span>
@@ -55,7 +62,7 @@
                         Get started +
                     </button>
                 </div>
-                <!--seccion Trusted by por google spotify airbnb paypal-->
+                <!-- Trusted by google spotify airbnb paypal-->
                 <div class="search">
                     <p class="search-p">Trusted by:</p>
                     <img class="img-trusted" src="./resources/images/google-white.svg" alt="Google">
@@ -65,9 +72,8 @@
                 </div>
             </div>
             <!--Manage Cards-->
-            <div class="manageCards-container">
+            <div class="manageCards-container col-lg-6 col-xl-5">
                 <div class="container-ManageCards">
-                    <!--Solo es la parte de arriba de la tarjeta, acordarse borrar este comentario-->
                     <p class="p-manageCards">
                         Manage cards
                     </p>
@@ -75,9 +81,8 @@
                         Add new
                     </button>
                 </div>
-                <!--ACA COMIENZA LA TARJETA DE CREDITO-->
+                <!--Credit card-->
                 <div class="img-card">
-                    <!--CHEQUEAR LINEA DE LA CLASE container-card la que esta abajo PARA POSICIONAR LA SECCION DE LA TARJETA DE CREDITO -->
                     <div class="container-card">
                         <div class="iconMaster-textActive">
                             <img class="svgMastercard" src="./resources/images/mastercard.svg" alt="card">
@@ -113,8 +118,7 @@
                         </div>
                     </div>
                 </div>
-                <!--aca termina la tarjeta de credito-->
-
+                <!--Costs-->
                 <div class="container-cost">
                     <div class="cost-Starbucks">
                         <p class="cost-name">
@@ -149,41 +153,24 @@
                     <a class="viewAll-anchor"href="#">View all ></a>
                 </div>
             </div>
+          </div>
+          </div>
         </div>
-    </header>
+    
 
-    <!--Manage cards
-Add new
-Active
-CARD NUMBER
-4358
-7421
-9256
-6682
-NAME
-John Snow
-EXPIRY DATE
-11/23
-Starbucks
-$5,50 USD
-Pending - San Francisco, United States
-Nike Sports
-$129,00 USD
-Pending - Lisbon, Portugal
-View all-->
 
 
     <!-- Product highlights section -->
 
     <!-- Bootstrap Grids -->
-    <section class="product-highlights container-fluid">
+    <section class="product-highlights">
+      <div class="container">
         <!-- FIRST -->
-        <div class="row">
+        <div class="row justify-content-between mb-200">
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-xl-6">
 
                 <div class="table-container">
-
                     <div class="progress-table">
                         <h2>
                             Awesome projects
@@ -193,19 +180,26 @@ View all-->
                                 <p>
                                     Create de new logo
                                 </p>
-                                <progress class="progress" value="50" max="100"></progress>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                
                             </div>
                             <div>
                                 <p>
                                     Set up de color palette
                                 </p>
-                                <progress class="progress" value="70" max="100"></progress>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
                             <div>
                                 <p>
                                     Wireframe and prototype
                                 </p>
-                                <progress class="progress" value="90" max="100"></progress>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -220,7 +214,7 @@ View all-->
             </div>
 
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-xl-5">
 
                 <div class="tools-info">
                     <div class="tools oval">
@@ -236,10 +230,10 @@ View all-->
             </div>
 
         </div>
-
+        
         <!--SECOND -->
-        <div class="row">
-            <div class="col-lg-6">
+        <div class="row mb-200">
+            <div class="col-md-12 col-lg-6">
 
                 <div class="features-info">
                     <div class="features oval">
@@ -259,21 +253,22 @@ View all-->
                 </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-md-12 col-lg-6">
                 <div class="features-example">
-                    <img class="features-img" src="./resources/images/img_02.jpg" alt="a team working on the computer">
+
+                    <img class="features-img img-fluid" src="./resources/images/img_02.jpg" alt="a team working on the computer">
                 </div>
             </div>
         </div>
 
         <!-- THIRD -->
-        <div class="row">
-            <div class="col-bg-6">
+        <div class="row justify-content-between mb-200">
+            <div class="col-lg-7">
 
                 <div class="technology-cards">
                     <!-- Tenía la clase container -->
                     <div class="row">
-                        <div class="col">
+                        <div class="col-lg-6">
                             <!-- Hendrix card -->
                             <div class="hendrix-card">
                                 <img class="technology-img" src="./resources/images/person_03.jpg" alt="example">
@@ -307,7 +302,7 @@ View all-->
 
 
 
-                        <div class="col">
+                        <div class="col-lg-6">
 
                             <div class="row">
 
@@ -360,7 +355,7 @@ View all-->
             </div>
 
 
-            <div class="col-lg-6">
+            <div class="col-lg-5">
 
                 <div class="technology-info">
                     <div class="technology oval">
@@ -372,6 +367,7 @@ View all-->
                     <p class="highlights-paragraphs">
                         Get components and examples, including tons of <br> variables that will help you grow your business.
                     </p>
+                    <a href="#">See case studies</a>
                 </div>
             </div>
 
@@ -400,11 +396,11 @@ View all-->
 
             <div class="col-lg-6">
                 <button type="button" class="play-btn-2 btn btn-light d-flex align-items-center">Play video</button>
-                <img class="highlights-img" src="./resources/images/img_03.jpg" alt="">
+                <img class="highlights-img img-fluid" src="./resources/images/img_03.jpg" alt="">
             </div>
         </div>
         
-        <!-- Infinite solutions-->
+        <!-- Infinite solutions block-->
         
         <div class="row">
             <div class="col-lg-12">
@@ -427,12 +423,20 @@ View all-->
                 </div>
             </div>
         </div>
+      </div>
     </section>
 
 
     <section class="awards container-fluid">
-
         <div class="row">
+          <div class="col-12">
+            <div class="container">
+              <div class="technology oval">
+                Awards
+              </div>
+              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, esse!</h4>
+            </div>
+          </div>
             <div class="col">
                 <div class="airbnb-card-b">
                     <img class="airbnb-card-logo-b" src="./resources/images/airbnb.svg" alt="Airbnb logo">
@@ -499,16 +503,7 @@ View all-->
                 </div>
             </div>
         </div>
-
-
-
-
-        
-
-
-        
     </section>
-
 
 
     <section class="helpful-answers container">
@@ -527,7 +522,7 @@ View all-->
                             </p>
                         </div>
                         <div class="answer">
-                            <p></p>
+                            <p>Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
@@ -541,7 +536,7 @@ View all-->
                         </div>
                         <div class="answer">
                             <p>
-                                How do i get access to my database
+                                Lorem ipsum dolor sit amet consectetur.
                             </p>
                         </div>
                     </div>
@@ -557,7 +552,7 @@ View all-->
                             </p>
                         </div>
                         <div class="answer">
-                            <p>Respuesta 1: Un acordeón es un instrumento musical...</p>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
                         </div>
                     </div>
                 </div>
@@ -570,7 +565,9 @@ View all-->
                             </p>
                         </div>
                         <div class="answer">
-                            <p></p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -585,7 +582,9 @@ View all-->
                             </p>
                         </div>
                         <div class="answer">
-                            <p>Respuesta 1: Un acordeón es un instrumento musical...</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, aliquid!
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -598,32 +597,32 @@ View all-->
                             </p>
                         </div>
                         <div class="answer">
-                            <p>Respuesta 4: Para tocar un acordeón, debes...</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <p>
+
+        <h4 class="mb-4 mt-5">
             I want to start a new project.
-        </p>
+        </h4>
         <div class="helpful-answers-CTA">
-            <button type="button" class="btn btn-primary">Buy now</button>
-            <a href="">
-                Learn more
-            </a>
+            <button type="button" class="btn btn-primary">Buy now <i class="fa-solid fa-arrow-right"></i></button>
+            <a href="#">Learn more</a>
         </div>
     </section>
-
 
 
     <!-- Footer -->
 
 
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row footer-top">
-                <div class="col-lg-8">
+    <footer class="footer container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-6 col-xxl-6">
                     <h3 class="title-footer-solution">
                         Brillant solutions for your ideas
                     </h3>
@@ -631,148 +630,149 @@ View all-->
                         Modern looking websites.
                     </p>
                 </div>
-                <div class="col-lg-2">
-                    <button class="button-documentation">
-                    <i class="fa-solid fa-book"></i>Documentation
-                    </button>
+                
+                <div class="col-auto">
+                    <button class="button-documentation"><i class="fa-solid fa-book"></i> Documentation</button>
                 </div>
-                <div class="col-lg-2">
-                    <button class="button-Purchase">Purchase Now</button>
+                <div class="col-auto">
+                   <button class="button-Purchase">Purchase Now</button>
                 </div>
-                <hr class="divider">
+            
             </div>
-            <div class="row footer-center">
-                <div class="col-lg-6">
+            <hr class="divider">
+            <div class="row">
+                <div class="col-lg-6 col-xl-6 col-xxl-6">
                     <div>
-                        <img class="logo-footer" src="./resources/images/odoo-white.svg" alt="logo from Odoo">
+                        <img class="logo-footer" src="./resources/images/odoo-nav.svg" alt="Odoo white logo">
+
                         <p class="p-odooFooter">
-                            Odoo attempts to bring the best development experience to designers and developers by
-                            offering
+                            Odoo attempts to bring the best development experience to designers and developers by offering
                             the tools
                             needed for having a quick and solid start in most web projects.
                         </p>
-                        <a class="ico-socialNetwork" href="#"><i class="fa-brands fa-dribbble socialNetwork"></i></a>
+                        <a class="ico-socialNetwork" href="#"><i class="fa-solid fa-basketball socialNetwork"></i></a>
                         <a class="ico-socialNetwork" href="#"><i class="fa-brands fa-github socialNetwork"></i></a>
                         <a class="ico-socialNetwork" href="#"><i class="fa-brands fa-instagram socialNetwork"></i></a>
                         <a class="ico-socialNetwork" href="#"><i class="fa-brands fa-facebook socialNetwork"></i></a>
                     </div>
-               </div>
-                    <div class="row">
-                        <div class="col-lg-2">
-                            <div class="account">
-                                <h4 class="title-AccountAboutCompany">
-                                    Account
-                                </h4>
-                                <ul class="ul-AccountAboutCompany">
-                                    <li class="li-AccountAboutCompany">
-                                        <a class="anchor-AccountAboutCompany" href="#">
-                                            Profile
-                                        </a>
-                                    </li>
-                                    <li class="li-AccountAboutCompany">
-                                        <a class="anchor-AccountAboutCompany" href="#">
-                                            Settings
-                                        </a>
-                                    </li>
-                                    <li class="li-AccountAboutCompany">
-                                        <a class="anchor-AccountAboutCompany" href="#">
-                                            Billing
-                                        </a>
-                                    </li>
-                                    <li class="li-AccountAboutCompany">
-                                        <a class="anchor-AccountAboutCompany" href="#">
-                                            Notifications
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                </div>
 
-                        <div class="col-lg-2">
-                            <div class="account">
-                                <h4 class="title-AccountAboutCompany">
-                                    About
-                                </h4>
-                                <ul class="ul-AccountAboutCompany">
-                                    <li class="li-AccountAboutCompany">
-                                        <a class="anchor-AccountAboutCompany" href="#">
-                                            Services
-                                        </a>
-                                    </li>
-                                   <li class="li-AccountAboutCompany">
-                                        <a class="anchor-AccountAboutCompany" href="#">
-                                            Pricing
-                                        </a>
-                                    </li>
-                                    <li class="li-AccountAboutCompany">
-                                        <a class="anchor-AccountAboutCompany" href="#">
-                                            Contact
-                                        </a>
-                                    </li>
-                                    <li class="li-AccountAboutCompany">
-                                        <a class="anchor-AccountAboutCompany" href="#">
-                                            Careers
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="account">
-                            <h4 class="title-AccountAboutCompany">
-                                Account
-                            </h4>
-                            <ul class="ul-AccountAboutCompany">
-                                <li class="li-AccountAboutCompany">
-                                    <a class="anchor-AccountAboutCompany" href="#">
-                                        Profile
-                                    </a>
-                                </li>
-                                <li class="li-AccountAboutCompany">
-                                    <a class="anchor-AccountAboutCompany" href="#">
-                                        Settings
-                                    </a>
-                                </li>
-                                <li class="li-AccountAboutCompany">
-                                    <a class="anchor-AccountAboutCompany" href="#">
-                                        Billing
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="col-lg-2 col-xl-2 col-xxl-2">
+                    <div class="account">
+                        <h4 class="title-AccountAboutCompany">
+                            Account
+                        </h4>
+                        <ul class="ul-AccountAboutCompany">
+                            <li class="li-AccountAboutCompany">
+                                <a class="anchor-AccountAboutCompany" href="">
+                                    Profile
+                                </a>
+                            </li>
+                            <li class="li-AccountAboutCompany">
+                                <a class="anchor-AccountAboutCompany" href="">
+                                    Settings
+                                </a>
+                            </li>
+                            <li class="li-AccountAboutCompany">
+                                <a class="anchor-AccountAboutCompany" href="">
+                                    Billing
+                                </a>
+                            </li>
+                            <li class="li-AccountAboutCompany">
+                                <a class="anchor-AccountAboutCompany" href="">
+                                    Notifications
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                    <div class="row footer-bottom">
-                        <hr class="divider">
-                        <div class="col-lg-8">
-                            <p class="rights">
-                                ©Odoo. <span class="rightReserved">All rights reserved</span>
-                            </p>
-                        </div>
-                        <div class="col-lg-4 div-terms">
-                            <p class="p-terms">Terms</p>
-                            <p class="p-terms">Privacy</p>
-                            <p class="p-terms">Cookies</p>
-                        </div>
+                <div class="col-lg-2 col-xl-2 col-xxl-2">
+                    <div class="about">
+                        <h4 class="title-AccountAboutCompany">
+                            About
+                        </h4>
+                        <ul class="ul-AccountAboutCompany">
+                            <li class="li-AccountAboutCompany">
+                                <a class="anchor-AccountAboutCompany" href="#">
+                                    Services
+                                </a>
+                            </li>
+                            <li class="li-AccountAboutCompany">
+                                <a class="anchor-AccountAboutCompany" href="#">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="li-AccountAboutCompany">
+                                <a class="anchor-AccountAboutCompany" href="#">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="li-AccountAboutCompany">
+                                <a class="anchor-AccountAboutCompany" href="#">
+                                    Pricing
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-xl-2 col-xxl-2">
+                    <div class="company">
+                        <h4 class="title-AccountAboutCompany">
+                            Company
+                        </h4>
+                        <ul class="ul-AccountAboutCompany">
+                            <li class="li-AccountAboutCompany">
+                                <a class="anchor-AccountAboutCompany" href="#">
+                                    Community
+                                </a>
+                            </li>
+                            <li class="li-AccountAboutCompany">
+                                <a class="anchor-AccountAboutCompany" href="#">
+                                    Help Center
+                                </a>
+                            </li>
+                            <li class="li-AccountAboutCompany">
+                                <a class="anchor-AccountAboutCompany" href="#">
+                                    Support
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        <div>
         </div>
-        
+            <div class="row footer-bottom">
+                <hr class="divider">
+                <div class="col-lg-8 col-xl-8 col-xxl-8">
+                    <p class="rights">
+                        ©Odoo. <span class="rightReserved">All rights reserved</span>
+                    </p>
+                </div>
+                <div class="col-lg-4 div-terms">
+                    <p class="p-terms">Terms</p>
+                    <p class="p-terms">Privacy</p>
+                    <p class="p-terms">Cookies</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </footer>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="./javascript.js"></script>
 </body>
 
 
 </html>
+

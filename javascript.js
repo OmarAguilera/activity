@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
+    /* Get all elements with the question-answer class */
     const questionAnswers = document.querySelectorAll(".question-answer");
 
+    /* Loop through each question-answer element */
     questionAnswers.forEach((qa) => {
         const question = qa.querySelector(".question");
 
