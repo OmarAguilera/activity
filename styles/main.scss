@@ -1,12 +1,8 @@
-@import './partials/colors';
-
 * {
     padding: 0;
     border: 0;
     box-sizing: border-box;
 }
-
-
 /* Logo */
 
 .logo-nav{
@@ -772,6 +768,16 @@ border: solid 1px rgb(231, 231, 231);
 background-color: #f0f0f0;
 }
 
+.award-card:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+
+.award-card:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
+}
 
 
 /* Helpful Answers */
