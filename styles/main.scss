@@ -1,9 +1,11 @@
+@import './partials/colors';
+
 * {
     padding: 0;
     border: 0;
     box-sizing: border-box;
 }
-/* Logo */
+//clase logo
 
 .logo-nav{
     height: 30px;
@@ -13,8 +15,7 @@
     margin: 0 0.5rem;
 }
 
-/*Button container*/
-
+/*Clase div contenedor de botones*/
 .button-container{
     padding: 8px 0 8px 0;
     display: inline-block;
@@ -41,9 +42,10 @@
     color: $btn-text-color;
 }
 
+/*#18144c color azul de bloque infinite Solutions */
 
 
-/*Hero*/
+/*Componente Hero*/
 
 .hero{
     border-top: 0.5px solid rgba(255, 254, 254, 0.377);
@@ -76,11 +78,11 @@
 }
  
 .main-title-continue {
-    display: block; /* Another way to separate sentences. Of course it can be done in other ways */
-    margin-top: 10px; /* letters leading */
+    display: block; /* Hacer que "done rigth" sea un bloque */
+    margin-top: 10px; /* Espacio entre las líneas */
 }
 
-/*Hero description */
+/*parte del texto debajo del titulo */
 .hero-description{
     margin: 50px 0;
     font-size: 1.5rem;
@@ -98,7 +100,9 @@
     cursor: pointer;
 }
 
-/* Trusted by - brands */
+
+
+/*Bloque search trusted by*/
 
 .search{
     display: flex;
@@ -111,6 +115,12 @@
 }
 
 
+
+/* Highlights section */
+
+
+
+
 /* Highlights section */
 
 
@@ -120,6 +130,7 @@
     align-items: center;
     height: 720px;
     max-width: 700px;
+    /* margin-left: 20%; */
 }
 .progress-table{
     position: absolute;
@@ -168,9 +179,9 @@
     }
 }
 
-/* Progress bar style webkit (Chrome) */
+        /* Progress bar style webkit (Chrome) */
 .progress::-webkit-progress-value {
-    background-color: #ace65b; 
+    background-color: #5b6a64; 
 }
 
 /* Progress bar style Mozilla (Firefox) */
@@ -196,9 +207,81 @@
 }
 
 
+
+@media (max-width: 992px) {
+    .table-container {
+        display: flex;
+        justify-content: start;
+        height: 720px;
+        max-width: 700px;
+    }
+    .progress-table{
+        max-width: 350px;
+        height: 280px;
+        box-shadow: 1px 1px 5px 1px grey;
+        h2 {
+            margin-top: 20px;
+            margin-left: 20px;
+            font: {
+                weight: 400;
+                size: 18px;
+            }
+        }
+        .bars > * {
+            margin-bottom: 15px;
+        }
+        
+        .bars {
+            display: flex;
+            justify-content: center;
+            margin-top:20px;
+            .progress {
+                max-width: 310px;
+                background: rgb(144, 134, 134);
+                border: none;
+                height: 20px;
+                border-radius: 10px;
+                height: 3px;
+                appearance: none;
+                justify-content: center;
+            }
+        }
+    }
+    .team-img{
+        margin-bottom: 200px;
+        margin-left: 200px;
+        height: 250px;
+        border-radius: 10px;
+    }
+    .play{
+        margin-left: 450px;
+        margin-bottom: 450px;
+        border: 5px;
+        max-width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .tools-info{
+        margin-top: 200px;
+        margin-right: 450px;
+        max-width: 600px;
+            h2 {
+                font: {
+                    weight: 600;
+                    size: 25px;
+                }
+            }
+        }
+  }
+
+
 .tools-info{
 margin-top: 200px;
 margin-right: 300px;
+}
+
+.features-example {
+
 }
 
 .features-info {
@@ -299,6 +382,8 @@ max-width: 600px;
 height: auto;
 margin-left: 345px;
 }
+
+
 
 /* Jimmy Hendrix Card */
 
@@ -440,7 +525,7 @@ align-items: center;
 }
 
 .UIKit-logo {
-margin-top: -50px;
+margin-top: -50px; /* Ajusta el margen superior negativo para subir la imagen */
 margin-bottom: 40px; 
 border-radius: 50px;
 height: 70px;
@@ -453,7 +538,7 @@ justify-content: center;
 }
 
 .people-UIKit {
-margin: 0 -7px;
+margin: 0 -7px; /* Ajusta el margen horizontal de las imágenes de personas a 25px */
 height: 40px;
 border-radius: 50px;
 border: 2px solid white;
@@ -493,6 +578,10 @@ border-radius: 10px;
 height: 30px;
 }
 
+
+/*Seccion de manage cards con el boton Add new*/
+
+
 .manageCards-container{
 padding: 2rem 1rem;
 margin: 8rem  10rem;
@@ -524,7 +613,8 @@ border: 2px solid #ccc;
 cursor: pointer;
 }
 
-/* Credit card secundary styles */
+
+//Imagen card 
 
 .img-card{
 color: white;
@@ -555,6 +645,7 @@ padding: 0.8rem 1rem;
 border-radius: 1rem;
 }
 
+//Numero de tarjeta 
 .container-cardNumber{
 padding: 0 1rem;
 
@@ -573,6 +664,9 @@ text-align: right;
 letter-spacing: 2px;
 white-space: nowrap;
 }
+
+//nombre de usuario de tarjeta y expiracion
+
 
 .name-expiryDate{
 display: flex;
@@ -609,7 +703,7 @@ font-weight: 100;
 font-size: 1.3rem;
 }
 
-/* Spending history */
+//Historial de consumos
 
 .container-cost{
 margin: 1.5rem;
@@ -642,9 +736,7 @@ margin: 1.5rem;
 .viewAll-anchor{
 border-bottom: 1px dashed 
 }
-
-
-/* Infinite solutions block */
+/* Infinite solutions */
 
 .infinite-solutions-container {
 display: flex;
@@ -666,6 +758,7 @@ align-items: center;
 .info {
 margin-left: 100px;
 }
+
 
 .learn-more-button{
 max-width: 150px;
@@ -765,20 +858,8 @@ border: solid 1px rgb(231, 231, 231);
 }
 
 .awards:hover {
-background-color: #f0f0f0;
+background-color: #f0f0f0; /* Cambia el color de fondo en el hover */
 }
-
-.award-card:hover {
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1);
-}
-
-
-.award-card:hover {
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1);
-}
-
 
 /* Helpful Answers */
 
@@ -793,6 +874,10 @@ color: #18144c;
 .answers-description {
 color: #667791;
 }
+}
+
+.helpful-answers-CTA {
+
 }
 
 
@@ -870,7 +955,7 @@ color: #1c1c16;
     font-weight: 400;
 }
 
-/* Footer buttons, documantations and last CTA */
+//Botones documentacion y purchase
 
 
 .button-documentation{
@@ -897,6 +982,18 @@ color: #1c1c16;
     white-space: nowrap;
     cursor: pointer;
 }
+.footer-top{
+    
+}
+
+.footer-bottom {
+    
+}
+
+
+.footer-center {
+    
+}
 
 .logo-footer {
     margin: 2rem 0 2rem 0;
@@ -916,7 +1013,7 @@ color: #1c1c16;
     max-width: 90%;
 }
 
-/* Social media */
+//redes sociales 
 
 .ico-socialNetwork{
     margin: 1rem 1.5rem 0rem 0;
@@ -929,7 +1026,7 @@ color: #1c1c16;
 }
 
 
-/* Account, about, company */
+// textos account about company
 
 .title-AccountAboutCompany{
     margin: 2rem 0 2rem 0;
@@ -959,12 +1056,7 @@ color: #1c1c16;
 .p-terms{
     margin: 0 1rem;
     color: rgba(255, 255, 255, 0.555);
-
-
 }
-
-/* Additional Media Queries  */
-/* Of course i have used bootstrap breakpoints for my layout but also some extra styles are needed*/
 
 
 @media (max-width: 992px){
@@ -1000,77 +1092,9 @@ color: #1c1c16;
        
     }
     
-    /* Credit card */
+    //Tarjeta de credito
     .card-number{
         margin-right: 3rem
         }
     
 }
-
-
-
-@media (max-width: 992px) {
-    .table-container {
-        display: flex;
-        justify-content: start;
-        height: 720px;
-        max-width: 700px;
-    }
-    .progress-table{
-        max-width: 350px;
-        height: 280px;
-        box-shadow: 1px 1px 5px 1px grey;
-        h2 {
-            margin-top: 20px;
-            margin-left: 20px;
-            font: {
-                weight: 400;
-                size: 18px;
-            }
-        }
-        .bars > * {
-            margin-bottom: 15px;
-        }
-        
-        .bars {
-            display: flex;
-            justify-content: center;
-            margin-top:20px;
-            .progress {
-                max-width: 310px;
-                background: rgb(144, 134, 134);
-                border: none;
-                height: 20px;
-                border-radius: 10px;
-                height: 3px;
-                appearance: none;
-                justify-content: center;
-            }
-        }
-    }
-    .team-img{
-        margin-bottom: 200px;
-        margin-left: 200px;
-        height: 250px;
-        border-radius: 10px;
-    }
-    .play{
-        margin-left: 450px;
-        margin-bottom: 450px;
-        border: 5px;
-        max-width: 80px;
-        height: 30px;
-        font-size: 10px;
-    }
-    .tools-info{
-        margin-top: 200px;
-        margin-right: 450px;
-        max-width: 600px;
-            h2 {
-                font: {
-                    weight: 600;
-                    size: 25px;
-                }
-            }
-        }
-  }
