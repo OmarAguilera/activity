@@ -754,7 +754,7 @@ header {
   max-width: 100%;
   height: 1020px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
-  clip-path: polygon(0 0, 100% 0, 100% 74%, 0 82%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 82%);
 }
 
 .award-card {
@@ -1166,6 +1166,7 @@ header {
 
   .card-number {
     margin-right: 3rem;
+    font-size: 1.5 rem; /* Changes the font of the card number on 992pixels screen */
   }
 
   .easy-to-install-info {
@@ -1177,6 +1178,8 @@ header {
   margin-top: 150px;
   margin-bottom: 0;
 }
+  .award-card img, .airbnb-card-b .airbnb-card-logo-b, .spotify-card-logo {
+    max-width: 100px;
 }
 
 @media (min-width: 1400px) {
